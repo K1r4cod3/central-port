@@ -14,24 +14,6 @@ const WelcomeInfo = () => {
             Hơn cả một cảng biển, chúng tôi là một trung tâm hậu cần quan trọng, cam kết định hình tương lai của thương mại hàng hải tại miền Trung Việt Nam. Tầm nhìn của chúng tôi là tạo ra một cảng thân thiện với môi trường, bao trùm và an toàn, đáp ứng các nhu cầu ngày càng phát triển của ngành vận tải toàn cầu đồng thời thúc đẩy sự phát triển bền vững cho khu vực.
         </p>
         <p className='mx-auto max-w-[630px] mb-8 text-left title-font text-2xl font-bold text-blue-400 uppercase'>
-            Chúng Tôi Phục Vụ Ai
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>
-            Dù bạn là một thuyền trưởng điều hướng trên vùng nước của chúng tôi, một nhà vận chuyển tìm kiếm các giải pháp hậu cần đáng tin cậy, một cư dân Thanh Hóa tò mò về hoạt động của chúng tôi, một du khách háo hức khám phá cơ sở vật chất của chúng tôi, một đồng nghiệp tiềm năng tìm kiếm cơ hội nghề nghiệp, hay một thành viên của truyền thông muốn tìm hiểu các cập nhật mới nhất, chúng tôi đều có điều gì đó dành cho bạn. Cảng của chúng tôi cung cấp một loạt thông tin và dịch vụ được thiết kế phù hợp với nhu cầu của bạn:
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>
-            1.	Dịch Vụ Kinh Doanh: Thông số kỹ thuật chi tiết, khả năng xếp dỡ hàng hóa, và hỗ trợ hậu cần cho các nhà vận chuyển và nhà điều hành hàng hải.
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>
-            2.	Cơ Hội Nghề Nghiệp: Các vị trí tuyển dụng cho những ai muốn gia nhập đội ngũ tận tâm của chúng tôi.
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>
-            3.	Cộng Đồng và Du Lịch: Các chuyến tham quan cảng và thông tin địa phương cho cư dân và du khách.
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>
-            4.	Nguồn Thông Tin Truyền Thông: Thông cáo báo chí, cập nhật tin tức, và các thông tin quan trọng về hoạt động của chúng tôi.
-        </p>
-        <p className='mx-auto max-w-[630px] mb-8 text-left title-font text-2xl font-bold text-blue-400 uppercase'>
             Cam kết của chúng tôi
         </p>
         <p className='mx-auto max-w-[630px] mb-8 text-left content-font text-lg'>

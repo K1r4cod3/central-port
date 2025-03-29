@@ -12,9 +12,16 @@ const Navbar = () => {
   return (
     <>
       <div className='w-full h-7 bg-blue-900'>
-          
+        <div className='float-right h-full flex items-center gap-2'>
+          <div>
+            <a href="#" className='text-white'>Liên hệ</a>
+          </div>
+          <div>
+            <a href="#" className='text-white'>Ngôn ngữ</a>
+          </div>
+        </div>
       </div>
-      <div className="flex justify-between items-center max-w-[1250px] h-15 mx-auto px-2">
+      <div className="flex justify-between items-center max-w-[1250px] h-20 mx-auto px-2">
         <a href="#">
           <div className='flex items-center'>
             <img src={portLogo} alt="" className='h-12' />
@@ -23,78 +30,99 @@ const Navbar = () => {
         </a>
 
         <div className='h-full'>
-          <ul className='flex justify-center' id='nav'>
-            <li className='relative p-4 content-font group hover:border-b-4 hover:border-b-blue-400'>
-              <a href="#" className=''>Giới thiệu</a>
+          <ul className='flex h-full gap-4' id='nav'>
+            <li className='flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400'>
+              <a href="#" className='px-4 py-4 text-lg font-bold text-[#001f4b]'>Trang chủ</a>
             </li>
-            <li className='relative p-4 content-font group hover:border-b-4 hover:border-b-blue-400'>
-              <a href="#" className=''>Dịch vụ</a>
+            <li className='flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400'>
+              <a href="#" className='px-4 py-4 text-lg font-bold text-[#001f4b]'>Giới thiệu</a>
+              {/* mega menu */}
+              <div
+                className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
+                <div class="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                  <div >
+                  <ul class="content-font">
+                          <li class="py-1 m-4"><a href="#" class="hover:underline">VỀ CHÚNG TÔI</a></li>
+                          <li class="py-1 m-4"><a href="#" class="hover:underline">THƯ NGỎ</a></li>
+                          <li class="py-1 m-4"><a href="#" class="hover:underline">LỢI THẾ NỔI BẬT</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className='flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400'>
+              <a href="#" className='px-4 py-4 text-lg font-bold text-[#001f4b]'>Dịch vụ</a>
               {/* mega menu */}
               <div 
-                className='fixed left-0 top-22 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
+                className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
                 <div class="container grid grid-cols-4 gap-8 mx-auto max-w-[1200px]">
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ xếp dỡ hàng hóa</h3>
+                      <h3 class="title-font font-bold">Dịch vụ xếp dỡ hàng hóa và chuyển tải hàng hóa</h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Xếp dỡ container bằng cần cẩu bờ và thiết bị chuyên dụng</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Xếp dỡ hàng rời (than, quặng, dầu thô, ngũ cốc, xi măng, v.v.)</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Xử lý hàng siêu trường, siêu trọng.</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Chuyển tải xăng dầu</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Cẩu hàng hóa trên biển</a></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ lưu kho và bãi</h3>
+                      <h3 class="title-font font-bold">Dịch vụ neo đậu và kho bãi</h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Lưu trữ container, hàng hóa trong kho bãi</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Kho ngoại quan, kho lạnh, kho bảo thuế</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Khu vực bãi tập kết hàng xuất khẩu và nhập khẩu</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Neo đậu tàu thuyền</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Neo đậu chuyển tải xăng dầu</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Kho dầu hải quan</a></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ logistics và vận tải</h3>
+                      <h3 class="title-font font-bold">Dịch vụ an toàn và bảo vệ môi trường</h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Giao nhận hàng hóa đa phương thức (đường biển, đường bộ, đường sắt)</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Trung chuyển hàng hóa quốc tế</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ khai báo hải quan và thủ tục xuất nhập khẩu</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Kiểm soát và xử lý tràn dầu </a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Thu gom rác thải</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Cho thuê phao chống va & phao chống tràn dầu </a></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ hàng hải</h3>
+                      <h3 class="title-font font-bold">Dịch vụ Hỗ trợ Thuyền viên và Logistics </h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Cung cấp nhiên liệu và tiếp nước ngọt cho tàu</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ lai dắt, neo đậu, hỗ trợ tàu cập cảng</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ hoa tiêu hàng hải</a></li>
-                          <li class="py-1"><a href="info-and-labor.html" class="hover:underline">Thông tin vận hành và neo đậu</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ đưa đón thuyền viên từ tàu đi bờ </a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ khai báo thuyền viên đi bờ</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ trao đổi thuyền viên </a></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ bảo trì, sửa chữa tàu biển</h3>
+                      <h3 class="title-font font-bold">Dịch vụ Vận tải </h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Bảo dưỡng, sửa chữa tàu biển ngay tại cảng</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ cung cấp phụ tùng, trang thiết bị hàng hải</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Cho thuê tàu vận tải </a></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold">Dịch vụ hỗ trợ khác</h3>
+                      <h3 class="title-font font-bold">Dịch vụ giám định</h3>
                       <ul class="content-font">
-                          <li class="py-1"><a href="#" class="hover:underline">Cung cấp nhân lực bốc xếp.</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ ăn uống, nghỉ ngơi cho thuyền viên.</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ bảo vệ hàng hóa, giám sát container.</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ vận tải trao đổi thuyền viên</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ tàu câu</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ đưa đón thuyền viên</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ vệ sinh hàng năm</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ thu gom xử lý rác biển</a></li>
-                          <li class="py-1"><a href="#" class="hover:underline">Dịch vụ cho thuê tàu vận tải</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Giám định hàng nhập</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Giám định hàng xuất</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">Giám định nhiên liệu tàu</a></li>
                       </ul>
                   </div>                            
                 </div>
               </div>
             </li>
-            <li className='relative p-4 content-font group hover:border-b-4 hover:border-b-blue-400'>
-              <a href="#" className=''>Thông tin kĩ thuật</a>
+            <li className='flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400'>
+              <a href="#" className='px-4 py-4 text-lg font-bold text-[#001f4b]'>Thông số kĩ thuật</a>
+              {/* mega menu */}
+              <div
+                className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
+                <div class="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                  <div >
+                  <ul class="content-font">
+                          <li class="py-1"><a href="#" class="hover:underline">THÔNG TIN KĨ THUẬT</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">KHU VỰC NEO ĐẬU SỐ 1</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">KHU VỰC NEO ĐẬU SỐ 2</a></li>
+                          <li class="py-1"><a href="#" class="hover:underline">BẢN ĐỒ KHU VỰC</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li className='relative p-4 content-font group hover:border-b-4 hover:border-b-blue-400'>
-              <a href="#" className=''>Tin tức</a>
+            <li className='flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400'>
+              <a href="#" className='px-4 py-4 text-lg font-bold text-[#001f4b]'>Tin tức</a>
             </li>
           </ul>
         </div>

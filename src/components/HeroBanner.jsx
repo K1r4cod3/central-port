@@ -5,9 +5,9 @@ const HeroBanner = () => {
   return (
     <div className="relative bg-cover bg-center h-[600px] bg-[url('../assets/port.jpg')] flex items-center">
       <div className='absolute inset-0 bg-black opacity-50'></div>
-      <div className='container mx-auto m-w-[1400px] grid grid-cols-2 gap-8 z-40 h-50'>
+      <div className='mx-auto max-w-[1400px] grid grid-cols-2 gap-8 z-40 h-50'>
         <div className='text-white font-bold uppercase leading-tight w-fit border-t-4 text-6xl'>
-          <h1>cảng nước sâu miền trung</h1>
+          <h1>cảng nước sâu <br></br> miền trung</h1>
         </div>
         <div className='bg-blue-400 px-20 py-10 items-center'>
           <h2 className='text-white title-font font-bold text-2xl'>Chúng tôi có thể giúp gì cho bạn?</h2>

@@ -6,15 +6,6 @@ import pic6 from '../assets/6.jpg'
 const ExploreBanner = () => {
   return (
     <div>
-        <div className='mx-auto mb-[90px] max-w-[630px]'>
-            <div className='py-[2.1875rem] border-t-[0.25rem] border-b-[0.25rem] border-yellow-500 text-gray-800 text-lg text-left font-bold content-font'>
-                "Cảng Nước Sâu Miền Trung là biểu tượng của sự phát triển bền vững và hiện đại hóa ngành logistics Việt Nam."
-            </div>
-            <div className='mt-5 uppercase text-left text-gray-600'>
-                <span class="font-bold content-font">Nguyễn Văn A</span> - <span>Giám đốc Cảng</span>
-            </div>
-        </div>
-
         <div className='mx-auto mb-[90px] max-w-[1440px]'>
             <div className="flex flex-col md:flex-row">
             {/* Div Chữ (Trái) */}
@@ -27,7 +18,7 @@ const ExploreBanner = () => {
                         Diện tích cảng: 5,5 km²
                     </h3>
                     <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                        Năng lực tiếp nhận: Tàu 100.000 DWT
+                        Năng lực tiếp nhận: Tàu 200.000 DWT
                     </h3>
                 </div>
 
