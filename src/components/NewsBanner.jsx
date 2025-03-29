@@ -19,7 +19,6 @@ export const NewsBanner = () => {
                 />
                 <span className="text-gray-500 text-sm mb-2">19/3/2025</span>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Chứng khoán Mỹ xanh rực nhờ hy vọng về thuế quan, giá dầu tăng hơn 1% sau tin Venezuela</h3>
-                <span className="text-blue-500 text-sm uppercase">News 1</span>
             </div>
 
             {/* News Item 2 */}
@@ -33,7 +32,6 @@ export const NewsBanner = () => {
                 <h3 className="text-lg font-bold text-gray-800 mb-2">
                 Ông Trump lại “tung hỏa mù” về thuế quan
                 </h3>
-                <span className="text-blue-500 text-sm uppercase">News 2</span>
             </div>
 
             {/* News Item 3 */}
@@ -45,7 +43,6 @@ export const NewsBanner = () => {
                 />
                 <span className="text-gray-500 text-sm mb-2">19/3/2025</span>
                 <h3 className="text-lg font-bold text-gray-800 mb-2">Dự báo 20 nền kinh tế tăng trưởng nhanh nhất thế giới năm 2025, Việt Nam cũng có mặt</h3>
-                <span className="text-blue-500 text-sm uppercase">News 3</span>
             </div>
 
             {/* News Item 4 */}
@@ -59,7 +56,6 @@ export const NewsBanner = () => {
                 <h3 className="text-lg font-bold text-gray-800 mb-2">
                 Châu Âu lo không thể tiếp tục dựa vào nguồn cung USD từ Fed
                 </h3>
-                <span className="text-blue-500 text-sm uppercase">News 4</span>
             </div>
         </div>
 
