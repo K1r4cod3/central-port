@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import portLogo from '../assets/logo1.png'
+import portLogo from '../../assets/logo1.png'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)

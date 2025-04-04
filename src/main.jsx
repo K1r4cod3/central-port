@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import FooterBar from './components/FooterBar'
+import Navbar from './components/shared/Navbar'
+import FooterBar from './components/shared/FooterBar'
 import Home from './pages/Home'
+import CargoHandlingAndTransshipmentServices from './pages/cargo-handling-and-transshipment-services/cargo-handling-and-transshipment-services'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cargo-handling-and-transshipment-services" element={<CargoHandlingAndTransshipmentServices />} />
       </Routes>
       <FooterBar />
     </BrowserRouter>

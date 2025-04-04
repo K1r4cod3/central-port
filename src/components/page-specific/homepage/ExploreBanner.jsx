@@ -1,7 +1,7 @@
 import React from 'react'
 import './ExploreBanner.css'
-import pic5 from '../assets/5.jpg'
-import pic6 from '../assets/6.jpg'
+import pic5 from '../../../assets/5.jpg'
+import pic6 from '../../../assets/6.jpg'
 
 const ExploreBanner = () => {
   return (

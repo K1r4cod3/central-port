@@ -3,7 +3,7 @@ import './HeroBanner.css'
 
 const HeroBanner = () => {
   return (
-    <div className="relative bg-cover bg-center h-[600px] bg-[url('../assets/port.jpg')] flex items-center">
+    <div className="relative bg-cover bg-center h-[600px] bg-[url('../../../assets/port.jpg')] flex items-center">
       <div className='absolute inset-0 bg-black opacity-50'></div>
       <div className='mx-auto max-w-[1400px] grid grid-cols-2 gap-8 z-40 h-50'>
         <div className='text-white font-bold uppercase leading-tight w-fit border-t-4 text-6xl'>
