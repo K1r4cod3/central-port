@@ -29,8 +29,9 @@ const FooterBar = () => {
             <h5 className="text-2xl font-bold mb-4">Contact Information</h5>
             <p>Central Deepwater Port</p>
             <p>Nghi Son Area, Nghi Son District, Thanh Hoa Province, Vietnam</p>
-            <p>+84 (0) 123 456 789</p>
-            <p>info@centraldeepwaterport.com</p>
+            <p>Hotline: 024.9999.9889</p>
+            <p>Fax: 023.6999.9889</p>
+            <p>Email: cangnuocsaumientrung@gmail.com</p>
           </div>
 
           {/* Cột 4: Social Media */}

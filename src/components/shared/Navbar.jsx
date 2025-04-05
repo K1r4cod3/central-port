@@ -6,19 +6,44 @@ import portLogo from '../../assets/logo1.png'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
+  const [showLanguageMenu, setShowLanguageMenu] = useState(false)
 
   const handleShowNav = () => {
     setShowNav(!showNav)
   }
+
   return (
     <>
       <div className='w-full h-7 bg-blue-900'>
-        <div className='float-right h-full flex items-center gap-2'>
+        <div className='float-right h-full flex items-center gap-4 mr-83'>
           <div>
-            <Link to="" className='text-white'>Liên hệ</Link>
+            <Link to="" className='text-white hover:text-blue-200 content-font font-semibold'>Liên hệ</Link>
           </div>
-          <div>
-            <Link to="" className='text-white'>Ngôn ngữ</Link>
+          <div className='relative'>
+            <button 
+              className='text-white hover:text-blue-200 flex items-center gap-1 content-font font-semibold'
+              onClick={() => setShowLanguageMenu(!showLanguageMenu)}
+            >
+              Ngôn ngữ
+              <svg 
+                className={`w-4 h-4 transition-transform ${showLanguageMenu ? 'rotate-180' : ''}`} 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {showLanguageMenu && (
+              <div className='absolute right-0 mt-1 w-32 bg-white rounded-md shadow-lg py-1 z-50'>
+                <button className='block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                  Tiếng Việt
+                </button>
+                <button className='block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100'>
+                  English
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -43,8 +68,8 @@ const Navbar = () => {
                 <div className='container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]'>
                   <div >
                   <ul className='content-font'>
-                          <li className='py-1 m-4'><Link to="" className='hover:underline'>VỀ CHÚNG TÔI</Link></li>
-                          <li className='py-1 m-4'><Link to="" className='hover:underline'>THƯ NGỎ</Link></li>
+                          <li className='py-1 m-4'><Link to="/about-us" className='hover:underline'>VỀ CHÚNG TÔI</Link></li>
+                          <li className='py-1 m-4'><Link to="/open-letter" className='hover:underline'>THƯ NGỎ</Link></li>
                           <li className='py-1 m-4'><Link to="" className='hover:underline'>LỢI THẾ NỔI BẬT</Link></li>
                       </ul>
                   </div>
@@ -73,7 +98,7 @@ const Navbar = () => {
                       </ul>
                   </div>
                   <div>
-                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ an toàn và bảo vệ môi trường</Link>
+                      <Link to="/safety-and-environmental-protection-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ an toàn và bảo vệ môi trường</Link>
                       <ul className='content-font'>
                           <li className='py-1'><Link to="" className='hover:underline'>Kiểm soát và xử lý tràn dầu </Link></li>
                           <li className='py-1'><Link to="" className='hover:underline'>Thu gom rác thải</Link></li>
@@ -81,7 +106,7 @@ const Navbar = () => {
                       </ul>
                   </div>
                   <div>
-                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Hỗ trợ Thuyền viên và Logistics </Link>
+                      <Link to="/crew-support-and-logistics-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Hỗ trợ Thuyền viên và Logistics </Link>
                       <ul className='content-font'>
                           <li className='py-1'><Link to="" className='hover:underline'>Dịch vụ đưa đón thuyền viên từ tàu đi bờ </Link></li>
                           <li className='py-1'><Link to="" className='hover:underline'>Dịch vụ khai báo thuyền viên đi bờ</Link></li>
@@ -89,13 +114,13 @@ const Navbar = () => {
                       </ul>
                   </div>
                   <div>
-                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Vận tải </Link>
+                      <Link to="/transportation-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Vận tải </Link>
                       <ul className='content-font'>
                           <li className='py-1'><Link to="" className='hover:underline'>Cho thuê tàu vận tải </Link></li>
                       </ul>
                   </div>
                   <div>
-                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ giám định</Link>
+                      <Link to="/inspection-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ giám định</Link>
                       <ul className='content-font'>
                           <li className='py-1'><Link to="" className='hover:underline'>Giám định hàng nhập</Link></li>
                           <li className='py-1'><Link to="" className='hover:underline'>Giám định hàng xuất</Link></li>
@@ -113,10 +138,10 @@ const Navbar = () => {
                 <div className='container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]'>
                   <div >
                   <ul className='content-font'>
-                          <li className='py-1'><Link to="" className='hover:underline'>THÔNG TIN KĨ THUẬT</Link></li>
-                          <li className='py-1'><Link to="" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 1</Link></li>
-                          <li className='py-1'><Link to="" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 2</Link></li>
-                          <li className='py-1'><Link to="" className='hover:underline'>BẢN ĐỒ KHU VỰC</Link></li>
+                          <li className='py-1'><Link to="/technical-information" className='hover:underline'>THÔNG TIN KĨ THUẬT</Link></li>
+                          <li className='py-1'><Link to="/anchorage-area-1" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 1</Link></li>
+                          <li className='py-1'><Link to="/anchorage-area-2" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 2</Link></li>
+                          <li className='py-1'><Link to="/area-map" className='hover:underline'>BẢN ĐỒ KHU VỰC</Link></li>
                       </ul>
                   </div>
                 </div>
@@ -136,7 +161,7 @@ const Navbar = () => {
               placeholder="Tìm kiếm..."
               className='p-2'
             />
-            <button className='bg-blue-400 h-9 w-9'>?</button>
+            <button className='bg-[#16b8f8] px-4 py-2'>?</button>
         </div>
       </div>
     </>

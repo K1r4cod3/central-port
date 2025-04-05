@@ -1,8 +1,8 @@
 import React from 'react'
 import './HighLightImage.css'
 import { Link } from 'react-router-dom'
-import image1 from '../../../assets/1.jpg'
-import image2 from '../../../assets/2.jpg'
+import image1 from '../../../assets/cargo-handling-and-transshipment-services/highlight1.jpg'
+import image2 from '../../../assets/cargo-handling-and-transshipment-services/highlight2.jpg'
 
 const HighLightImage = () => {
   return (
@@ -11,7 +11,7 @@ const HighLightImage = () => {
           <h2 className='text-2xl md:text-4xl font-bold mb-12 text-center text-white title-font'>Hình Ảnh Nổi Bật</h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-            <div className='rounded-lg overflow-hidden shadow-md bg-white hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='overflow-hidden shadow-md bg-white hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='h-64 overflow-hidden'>
                 <img
                   src={image1}
@@ -25,7 +25,7 @@ const HighLightImage = () => {
               </div>
             </div>
 
-            <div className='rounded-lg overflow-hidden shadow-md bg-white hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='overflow-hidden shadow-md bg-white hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='h-64 overflow-hidden'>
                 <img
                   src={image2}

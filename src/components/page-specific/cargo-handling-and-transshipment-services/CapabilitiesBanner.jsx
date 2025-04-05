@@ -10,7 +10,7 @@ const CapabilitiesBanner = () => {
           <h2 className='text-2xl md:text-4xl font-bold mb-12 text-center text-white title-font'>Năng Lực Của Chúng Tôi</h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-            <div className='bg-white p-6 rounded-lg shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='bg-white p-6 shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
                 <Ship className='h-6 w-6 text-blue-600' />
               </div>
@@ -20,7 +20,7 @@ const CapabilitiesBanner = () => {
               </p>
             </div>
 
-            <div className='bg-white p-6 rounded-lg shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='bg-white p-6 shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
                 <Anchor className='h-6 w-6 text-blue-600' />
               </div>
@@ -30,7 +30,7 @@ const CapabilitiesBanner = () => {
               </p>
             </div>
 
-            <div className='bg-white p-6 rounded-lg shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='bg-white p-6 shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
                 <Ship className='h-6 w-6 text-blue-600' />
               </div>
@@ -41,7 +41,7 @@ const CapabilitiesBanner = () => {
               </p>
             </div>
 
-            <div className='bg-white p-6 rounded-lg shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
+            <div className='bg-white p-6 shadow-md hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
               <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
                 <Anchor className='h-6 w-6 text-blue-600' />
               </div>

@@ -15,6 +15,7 @@ function Home() {
       <WelcomeInfo />
       <InfoBanner />
       <ExploreBanner />
+      <hr className='border-t-10 border-yellow-300 my-10 w-3/4 mx-auto' />
       <NewsBanner />
     </>
   )
