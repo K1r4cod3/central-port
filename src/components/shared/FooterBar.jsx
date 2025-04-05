@@ -1,6 +1,7 @@
 import React from 'react'
 import './FooterBar.css'
 import logo from '../../assets/logo1.png'
+import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
 
 
 const FooterBar = () => {
@@ -35,11 +36,19 @@ const FooterBar = () => {
           {/* Cột 4: Social Media */}
           <div>
             <h5 className="text-2xl font-bold mb-4">Social Media</h5>
-            <div className="flex space-x-4 text-2xl">
-              <a href="#" className="hover:text-blue-500"></a>
-              <a href="#" className="hover:text-blue-400"></a>
-              <a href="#" className="hover:text-blue-600"></a>
-              <a href="#" className="hover:text-pink-500"></a>
+            <div className="flex space-x-4">
+              <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
+                <a href="https://www.facebook.com"><Facebook className='h-6 w-6 text-blue-600' /></a>
+              </div>
+              <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
+                <a href="https://www.instagram.com"><Instagram className='h-6 w-6 text-blue-600' /></a>
+              </div>
+              <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
+                <a href="https://www.linkedin.com"><Linkedin className='h-6 w-6 text-blue-600' /></a>
+              </div>
+              <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
+                <a href="https://www.twitter.com"><Twitter className='h-6 w-6 text-blue-600' /></a>
+              </div>
             </div>
           </div>
       </div>

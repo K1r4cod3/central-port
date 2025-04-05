@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center max-w-[1250px] h-20 mx-auto px-2">
+      <div className='flex justify-between items-center max-w-[1250px] h-20 mx-auto px-2'>
         <Link to="/">
           <div className='flex items-center'>
             <img src={portLogo} alt="" className='h-12' />
@@ -40,12 +40,12 @@ const Navbar = () => {
               {/* mega menu */}
               <div
                 className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
-                <div class="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                <div className='container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]'>
                   <div >
-                  <ul class="content-font">
-                          <li class="py-1 m-4"><Link to="" class="hover:underline">VỀ CHÚNG TÔI</Link></li>
-                          <li class="py-1 m-4"><Link to="" class="hover:underline">THƯ NGỎ</Link></li>
-                          <li class="py-1 m-4"><Link to="" class="hover:underline">LỢI THẾ NỔI BẬT</Link></li>
+                  <ul className='content-font'>
+                          <li className='py-1 m-4'><Link to="" className='hover:underline'>VỀ CHÚNG TÔI</Link></li>
+                          <li className='py-1 m-4'><Link to="" className='hover:underline'>THƯ NGỎ</Link></li>
+                          <li className='py-1 m-4'><Link to="" className='hover:underline'>LỢI THẾ NỔI BẬT</Link></li>
                       </ul>
                   </div>
                 </div>
@@ -55,51 +55,51 @@ const Navbar = () => {
               <Link to="" className='px-4 py-4 text-lg font-bold text-[#0a3a7d]'>Dịch vụ</Link>
               {/* mega menu */}
               <div 
-                className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
-                <div class="container grid grid-cols-4 gap-8 mx-auto max-w-[1200px]">
+                className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
+                <div className='container grid grid-cols-4 gap-8 mx-auto max-w-[1200px]'>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ xếp dỡ hàng hóa và chuyển tải hàng hóa</h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Chuyển tải xăng dầu</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Cẩu hàng hóa trên biển</Link></li>
+                      <Link to="/cargo-handling-and-transshipment-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ xếp dỡ hàng hóa và chuyển tải hàng hóa</Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Chuyển tải xăng dầu</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Cẩu hàng hóa trên biển</Link></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ neo đậu và kho bãi</h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Neo đậu tàu thuyền</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Neo đậu chuyển tải xăng dầu</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Kho dầu hải quan</Link></li>
+                      <Link to="/anchorage-and-warehousing-services" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ neo đậu và kho bãi</Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Neo đậu tàu thuyền</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Neo đậu chuyển tải xăng dầu</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Kho dầu hải quan</Link></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ an toàn và bảo vệ môi trường</h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Kiểm soát và xử lý tràn dầu </Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Thu gom rác thải</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Cho thuê phao chống va & phao chống tràn dầu </Link></li>
+                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ an toàn và bảo vệ môi trường</Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Kiểm soát và xử lý tràn dầu </Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Thu gom rác thải</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Cho thuê phao chống va & phao chống tràn dầu </Link></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ Hỗ trợ Thuyền viên và Logistics </h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Dịch vụ đưa đón thuyền viên từ tàu đi bờ </Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Dịch vụ khai báo thuyền viên đi bờ</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Dịch vụ trao đổi thuyền viên </Link></li>
+                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Hỗ trợ Thuyền viên và Logistics </Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Dịch vụ đưa đón thuyền viên từ tàu đi bờ </Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Dịch vụ khai báo thuyền viên đi bờ</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Dịch vụ trao đổi thuyền viên </Link></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ Vận tải </h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Cho thuê tàu vận tải </Link></li>
+                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ Vận tải </Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Cho thuê tàu vận tải </Link></li>
                       </ul>
                   </div>
                   <div>
-                      <h3 class="title-font font-bold underline hover:text-blue-400 text-xl">Dịch vụ giám định</h3>
-                      <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">Giám định hàng nhập</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Giám định hàng xuất</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">Giám định nhiên liệu tàu</Link></li>
+                      <Link to="" className='title-font font-bold underline hover:text-blue-300 text-xl'>Dịch vụ giám định</Link>
+                      <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>Giám định hàng nhập</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Giám định hàng xuất</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>Giám định nhiên liệu tàu</Link></li>
                       </ul>
                   </div>                            
                 </div>
@@ -110,13 +110,13 @@ const Navbar = () => {
               {/* mega menu */}
               <div
                 className='fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 '>
-                <div class="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                <div className='container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]'>
                   <div >
-                  <ul class="content-font">
-                          <li class="py-1"><Link to="" class="hover:underline">THÔNG TIN KĨ THUẬT</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">KHU VỰC NEO ĐẬU SỐ 1</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">KHU VỰC NEO ĐẬU SỐ 2</Link></li>
-                          <li class="py-1"><Link to="" class="hover:underline">BẢN ĐỒ KHU VỰC</Link></li>
+                  <ul className='content-font'>
+                          <li className='py-1'><Link to="" className='hover:underline'>THÔNG TIN KĨ THUẬT</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 1</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>KHU VỰC NEO ĐẬU SỐ 2</Link></li>
+                          <li className='py-1'><Link to="" className='hover:underline'>BẢN ĐỒ KHU VỰC</Link></li>
                       </ul>
                   </div>
                 </div>
