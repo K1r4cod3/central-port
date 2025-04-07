@@ -21,7 +21,7 @@ const HeroBanner = () => {
 
       {/* Content */}
       <div className="relative mx-auto max-w-[1400px] grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 z-40 h-full items-center px-4 md:px-0">
-        <div className="text-white font-bold uppercase leading-tight w-fit border-t-4 text-4xl md:text-6xl text-center mx-auto">
+        <div className="text-white font-bold uppercase leading-tight w-fit border-t-4 text-4xl md:text-6xl text-center mx-auto md:text-left ">
           <h1>
             cảng nước sâu <br></br> miền trung
           </h1>
