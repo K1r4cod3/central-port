@@ -1,12 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-
 .content-font {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title-font {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
+
+/* Add these styles to your Navbar.css file */
+
+/* Fix for the top position of mega menus */
+.top-27 {
+  top: 6.75rem;
+}
+
+/* Mobile menu styles */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Remove hover highlight from mobile menu items */
+.no-highlight {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+#mobile-menu nav ul li:hover {
+  background-color: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .title-font {
+    font-size: 1.25rem;
+  }
+}
+
