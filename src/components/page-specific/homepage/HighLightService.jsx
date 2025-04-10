@@ -1,4 +1,4 @@
-import "./HighlightService.css"
+import "./HighLightService.css"
 import service1 from "../../../assets/homepage/1.png"
 import service2 from "../../../assets/homepage/2.png"
 import service3 from "../../../assets/homepage/3.jpg"
