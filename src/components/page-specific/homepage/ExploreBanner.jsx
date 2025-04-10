@@ -18,7 +18,7 @@ const ExploreBanner = () => {
                 <span className="text-base md:text-lg">Diện tích cảng: 5,5 km²</span>
               </li>
               <li className="flex items-center">
-                <span className="text-base md:text-lg">Năng lực tiếp nhận: Tàu 100.000 DWT</span>
+                <span className="text-base md:text-lg">Năng lực tiếp nhận: Tàu 200.000 DWT</span>
               </li>
             </ul>
           </div>

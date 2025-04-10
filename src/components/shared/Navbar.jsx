@@ -38,12 +38,12 @@ const Navbar = () => {
       <div className="w-full h-7 bg-blue-900 hidden md:block">
         <div className="max-w-[1250px] mx-auto px-4 h-full flex justify-end items-center">
           <div className="flex items-center gap-4">
-            <div>
+            <div className="flex items-center h-full">
               <Link to="" className="text-white hover:text-blue-200 content-font font-semibold text-sm">
                 Liên hệ
               </Link>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center h-full">
               <button
                 className="text-white hover:text-blue-200 flex items-center gap-1 content-font font-semibold text-sm"
                 onClick={() => setShowLanguageMenu(!showLanguageMenu)}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <ChevronDown className={`w-4 h-4 transition-transform ${showLanguageMenu ? "rotate-180" : ""}`} />
               </button>
               {showLanguageMenu && (
-                <div className="absolute right-0 mt-1 w-32 bg-white rounded-md shadow-lg py-1 z-50">
+                <div className="absolute right-0 mt-1 top-full w-32 bg-white rounded-md shadow-lg py-1 z-50">
                   <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                     Tiếng Việt
                   </button>
@@ -326,7 +326,7 @@ const Navbar = () => {
         {/* Search box - visible only on desktop */}
         <div className="hidden lg:flex border border-gray-300 items-center">
           <input type="text" id="search" name="search" placeholder="Tìm kiếm..." className="p-2" />
-          <button className="bg-[#16b8f8] px-4 py-2 text-white">
+          <button className="bg-[#16b8f8] px-4 py-3 text-white">
             <Search className="h-5 w-5" />
           </button>
         </div>
@@ -358,7 +358,11 @@ const Navbar = () => {
             <nav className="mb-2">
               <ul className="space-y-4">
                 <li className="border-b border-blue-800 pb-4">
-                  <Link to="/" className="block py-2 text-xl font-bold text-white underline" onClick={() => setShowNav(false)}>
+                  <Link
+                    to="/"
+                    className="block py-2 text-xl font-bold text-white underline"
+                    onClick={() => setShowNav(false)}
+                  >
                     Trang chủ
                   </Link>
                 </li>
@@ -507,7 +511,11 @@ const Navbar = () => {
                 </li>
 
                 <li className="pb-4">
-                  <Link to="" className="block py-2 text-xl font-bold text-white underline" onClick={() => setShowNav(false)}>
+                  <Link
+                    to=""
+                    className="block py-2 text-xl font-bold text-white underline"
+                    onClick={() => setShowNav(false)}
+                  >
                     Tin tức
                   </Link>
                 </li>
@@ -549,4 +557,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

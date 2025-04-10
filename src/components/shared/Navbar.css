@@ -17,6 +17,12 @@
   top: 6.75rem;
 }
 
+/* Top bar alignment fixes */
+.max-w-\[1250px\] .flex.items-center.gap-4 {
+  height: 100%;
+  line-height: 1.75rem; /* Matches the height of the top bar */
+}
+
 /* Mobile menu styles */
 body.menu-open {
   overflow: hidden;
@@ -38,4 +44,3 @@ body.menu-open {
     font-size: 1.25rem;
   }
 }
-

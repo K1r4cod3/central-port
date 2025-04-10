@@ -6,12 +6,14 @@ import InfoBanner from '../../components/page-specific/homepage/InfoBanner'
 import ExploreBanner from '../../components/page-specific/homepage/ExploreBanner'
 import { NewsBanner } from '../../components/page-specific/homepage/NewsBanner'
 import FooterBar from '../../components/shared/FooterBar'
+import HighlightService from '../../components/page-specific/homepage/HighLightService'
 
 function Home() {
   return (
     <>
       <HeroBanner />
       <LinkSection />
+      <HighlightService />
       <WelcomeInfo />
       <InfoBanner />
       <ExploreBanner />
