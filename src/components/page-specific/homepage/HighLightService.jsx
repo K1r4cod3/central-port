@@ -7,7 +7,7 @@ import service4 from "../../../assets/homepage/4.jpg"
 const HighlightService = () => {
   return (
     <div className="py-16 bg-white">
-      <div className="container mx-auto px-4 max-w-[1440px]">
+      <div className="container mx-auto px-4 max-w-[1300px]">
         {/* Header Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 md:mb-16">
           {/* Left Column - Title */}
