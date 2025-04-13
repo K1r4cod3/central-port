@@ -1,0 +1,37 @@
+{
+    "hero-banner": {
+        "title": "chào mừng đến với cảng neo đậu nước sâu miền trung"
+    },
+
+    "hightlight-service": {
+        "highlight-service-title": "Các Dịch Vụ Nổi Bật Của Chúng Tôi",
+        "highlight-service-desc": "Tại Cảng Neo Đậu Nước Sâu Miền Trung, chúng tôi cung cấp đa dạng các dịch vụ chất lượng cao, đáp ứng mọi nhu cầu vận chuyển và logistics của khách hàng. Với cơ sở vật chất hiện đại và đội ngũ chuyên nghiệp, chúng tôi cam kết mang đến trải nghiệm dịch vụ tốt nhất cho đối tác trong và ngoài nước.",
+        "highlight-service1": "Vận tải",
+        "highlight-service2": "Giám định",
+        "highlight-service3": "Neo đậu and kho bãi",
+        "highlight-service4": "An toàn và bảo vệ môi trường"
+    },
+
+    "welcome-info": {
+        "welcome-info-title": "Chào mừng đến với Cảng Neo Đậu Nước Sâu Miền Trung – Trung Tâm Hàng Hải Hàng Đầu tại Miền Trung Việt Nam",
+        "welcome-info-content1": "Chào mừng bạn đến với Cảng Neo Đậu Nước Sâu Miền Trung! Tọa lạc tại trung tâm miền Trung Việt Nam, thuộc khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, chúng tôi tự hào là một cảng nước sâu hiện đại, đóng vai trò như một cửa ngõ chiến lược cho các tuyến hàng hải quốc tế. Với diện tích ấn tượng 55 km², cảng của chúng tôi được trang bị để tiếp nhận các tàu có trọng tải lên đến 200.000 DWT (Tấn trọng tải), đưa chúng tôi trở thành một trong 10 cảng hàng đầu tại Việt Nam và khu vực. Chúng tôi cam kết cung cấp các dịch vụ chất lượng cao, từ xếp dỡ và chuyển tải hàng hóa đến kho bãi và hỗ trợ hậu cần toàn diện, đảm bảo hoạt động liền mạch cho tất cả các đối tác của chúng tôi.",
+        "welcome-info-content2": "Hơn cả một cảng biển, chúng tôi là một trung tâm hậu cần quan trọng, cam kết định hình tương lai của thương mại hàng hải tại miền Trung Việt Nam. Tầm nhìn của chúng tôi là tạo ra một cảng thân thiện với môi trường, bao trùm và an toàn, đáp ứng các nhu cầu ngày càng phát triển của ngành vận tải toàn cầu đồng thời thúc đẩy sự phát triển bền vững cho khu vực."
+    },
+
+    "info-banner": {
+        "info-banner-title": "Cảng Nước Sâu Miền Trung Chào Mừng Du Khách",
+        "info-banner-content": "Cảng Nước Sâu Miền Trung – trung tâm hàng hải hàng đầu tại miền Trung Việt Nam – sẽ mở cửa đón công chúng vào Thứ Bảy, ngày 29 tháng 5 năm 2025. Du khách có thể mong chờ một ngày khám phá thú vị, bao gồm các chuyến tham quan khu vực neo đậu, các chuyến đi bằng thuyền và tìm hiểu về hoạt động hiện đại của cảng.",
+        "info-banner-button": "Tìm hiểu thêm"
+    },
+
+    "explore-banner": {
+        "explore-banner-title": "Cảng Neo Đậu Nước Sâu Miền Trung là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với các số liệu ấn tượng:",
+        "explore-banner-content1": "Diện tích cảng: 55 km²",
+        "explore-banner-content2": "Năng lực tiếp nhận: Tàu 200.000 DWT",
+        "explore-banner-item1": "Làm việc và học tập",
+        "explore-banner-item2": "Điều cần làm tại cảng"
+    }
+
+    
+
+}

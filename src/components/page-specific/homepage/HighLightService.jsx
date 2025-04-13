@@ -1,10 +1,12 @@
 import "./HighLightService.css"
+import { useTranslation } from 'react-i18next'
 import service1 from "../../../assets/homepage/1.png"
 import service2 from "../../../assets/homepage/2.png"
 import service3 from "../../../assets/homepage/3.jpg"
 import service4 from "../../../assets/homepage/4.jpg"
 
 const HighlightService = () => {
+  const { t } = useTranslation('homepage')
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4 max-w-[1300px]">
@@ -13,16 +15,14 @@ const HighlightService = () => {
           {/* Left Column - Title */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#00438c] leading-tight title-font">
-              Các Dịch Vụ Nổi Bật Của Chúng Tôi
+              {t('hightlight-service.highlight-service-title')}
             </h2>
           </div>
 
           {/* Right Column - Description */}
           <div className="border-l-0 md:border-l-2 md:border-gray-300 md:pl-8">
             <p className="text-gray-600 content-font text-base md:text-lg">
-              Tại Cảng Neo Đậu Nước Sâu Miền Trung, chúng tôi cung cấp đa dạng các dịch vụ chất lượng cao, đáp ứng mọi nhu cầu
-              vận chuyển và logistics của khách hàng. Với cơ sở vật chất hiện đại và đội ngũ chuyên nghiệp, chúng tôi
-              cam kết mang đến trải nghiệm dịch vụ tốt nhất cho đối tác trong và ngoài nước.
+              {t('hightlight-service.highlight-service-desc')}
             </p>
           </div>
         </div>
@@ -37,7 +37,9 @@ const HighlightService = () => {
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-4 text-center">
-              <h3 className="text-lg font-bold text-[#00438c] title-font">Vận tải</h3>
+              <h3 className="text-lg font-bold text-[#00438c] title-font">
+                {t('hightlight-service.highlight-service1')}
+              </h3>
             </div>
           </div>
 
@@ -49,7 +51,9 @@ const HighlightService = () => {
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-4 text-center">
-              <h3 className="text-lg font-bold text-[#00438c] title-font">Giám định</h3>
+              <h3 className="text-lg font-bold text-[#00438c] title-font">
+                {t('hightlight-service.highlight-service2')}
+              </h3>
             </div>
           </div>
 
@@ -61,7 +65,9 @@ const HighlightService = () => {
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-4 text-center">
-              <h3 className="text-lg font-bold text-[#00438c] title-font">Neo đậu và kho bãi</h3>
+              <h3 className="text-lg font-bold text-[#00438c] title-font">
+                {t('hightlight-service.highlight-service3')}
+              </h3>
             </div>
           </div>
 
@@ -73,7 +79,9 @@ const HighlightService = () => {
               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-white p-4 text-center">
-              <h3 className="text-lg font-bold text-[#00438c] title-font">An toàn và bảo vệ môi trường</h3>
+              <h3 className="text-lg font-bold text-[#00438c] title-font">
+                {t('hightlight-service.highlight-service4')}
+              </h3>
             </div>
           </div>
         </div>

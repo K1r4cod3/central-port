@@ -10,7 +10,7 @@ const ContentBanner = () => {
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 title-font">Giới thiệu</h1>
           <p className="text-gray-700 leading-relaxed content-font">
-            Cảng Nước Sâu Miền Trung, tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với diện tích 5.5 km² và khả năng tiếp nhận tàu lên đến 100.000 DWT. Trang Bản Đồ Khu Vực của chúng tôi cung cấp cái nhìn tổng quan toàn diện về bố trí của cảng, làm nổi bật các khu vực vận hành chính như khu neo đậu, khu vực xếp dỡ hàng hóa, kho dầu ngoại quan và khu vực hỗ trợ thuyền viên. Bản đồ này được thiết kế để giúp bạn điều hướng cơ sở của chúng tôi, lập kế hoạch hoạt động và hiểu rõ lợi thế chiến lược của vị trí cảng.
+            Cảng Nước Sâu Miền Trung, tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với diện tích 55 km² và khả năng tiếp nhận tàu lên đến 200.000 DWT. Trang Bản Đồ Khu Vực của chúng tôi cung cấp cái nhìn tổng quan toàn diện về bố trí của cảng, làm nổi bật các khu vực vận hành chính như khu neo đậu, khu vực xếp dỡ hàng hóa, kho dầu ngoại quan và khu vực hỗ trợ thuyền viên. Bản đồ này được thiết kế để giúp bạn điều hướng cơ sở của chúng tôi, lập kế hoạch hoạt động và hiểu rõ lợi thế chiến lược của vị trí cảng.
           </p>
         </section>
 
@@ -76,11 +76,11 @@ const ContentBanner = () => {
               <ul className="space-y-4 content-font text-gray-700">
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-2">•</span>
-                  <span><strong>Tổng diện tích:</strong> 5.5 km², cung cấp không gian rộng rãi cho các hoạt động hàng hải đa dạng.</span>
+                  <span><strong>Tổng diện tích:</strong> 55 km², cung cấp không gian rộng rãi cho các hoạt động hàng hải đa dạng.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-500 mr-2">•</span>
-                  <span><strong>Năng lực tiếp nhận tàu:</strong> Lên đến 100.000 DWT, đáp ứng nhiều kích cỡ tàu khác nhau.</span>
+                  <span><strong>Năng lực tiếp nhận tàu:</strong> Lên đến 200.000 DWT, đáp ứng nhiều kích cỡ tàu khác nhau.</span>
                 </li>
               </ul>
             </div>

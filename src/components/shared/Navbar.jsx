@@ -13,7 +13,7 @@ const Navbar = () => {
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null)
   const [activeMegaMenu, setActiveMegaMenu] = useState(null) // State để quản lý mega menu
   const location = useLocation() // Hook để theo dõi route
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation('translation')
 
   // Đóng mega menu khi route thay đổi
   useEffect(() => {
@@ -408,43 +408,43 @@ const Navbar = () => {
                   activeMegaMenu === "tech" ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}
               >
-                <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                <div className="container text-lg font-bold underline grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
                   <div>
                     <ul className="content-font">
                       <li className="py-1">
                         <Link
                           to="/technical-information"
-                          className="hover:underline"
+                          className="hover:underline uppercase"
                           onClick={() => handleMegaMenu(null)}
                         >
-                          THÔNG TIN KĨ THUẬT
+                          {t('technical-infomation-button.item1')}
                         </Link>
                       </li>
                       <li className="py-1">
                         <Link
                           to="/anchorage-area-1"
-                          className="hover:underline"
+                          className="hover:underline uppercase"
                           onClick={() => handleMegaMenu(null)}
                         >
-                          KHU VỰC NEO ĐẬU SỐ 1
+                          {t('technical-infomation-button.item2')}
                         </Link>
                       </li>
                       <li className="py-1">
                         <Link
                           to="/anchorage-area-2"
-                          className="hover:underline"
+                          className="hover:underline uppercase"
                           onClick={() => handleMegaMenu(null)}
                         >
-                          KHU VỰC NEO ĐẬU SỐ 2
+                          {t('technical-infomation-button.item3')}
                         </Link>
                       </li>
                       <li className="py-1">
                         <Link
                           to="/area-map"
-                          className="hover:underline"
+                          className="hover:underline uppercase"
                           onClick={() => handleMegaMenu(null)}
                         >
-                          BẢN ĐỒ KHU VỰC
+                          {t('technical-infomation-button.item4')}
                         </Link>
                       </li>
                     </ul>

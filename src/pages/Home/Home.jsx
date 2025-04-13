@@ -1,6 +1,5 @@
 import Navbar from '../../components/shared/Navbar'
 import HeroBanner from '../../components/page-specific/homepage/HeroBanner'
-import LinkSection from '../../components/page-specific/homepage/LinkSection'
 import WelcomeInfo from '../../components/page-specific/homepage/WelcomeInfo'
 import InfoBanner from '../../components/page-specific/homepage/InfoBanner'
 import ExploreBanner from '../../components/page-specific/homepage/ExploreBanner'
@@ -12,7 +11,6 @@ function Home() {
   return (
     <>
       <HeroBanner />
-      <LinkSection />
       <HighlightService />
       <WelcomeInfo />
       <InfoBanner />

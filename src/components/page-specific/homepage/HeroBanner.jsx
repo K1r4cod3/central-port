@@ -1,8 +1,10 @@
 import "./HeroBanner.css"
+import { useTranslation } from 'react-i18next'
 
 const HeroBanner = () => {
+  const { t } = useTranslation('homepage')
   return (
-    <div className="relative h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
+    <div className="relative h-[400px] md:h-[600px] overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full pointer-events-none">
         <iframe
@@ -21,34 +23,14 @@ const HeroBanner = () => {
       {/* Parent container - centered vertically and horizontally */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Content container - fixed width with responsive margins */}
-        <div className="w-[90%] sm:w-[85%] 2xl:w-[70%] h-1/3 mx-auto mb-30">
+        <div className="w-[90%] sm:w-[85%] 2xl:w-[70%] h-1/3 mx-auto">
           {/* Grid layout for title and search */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
             {/* Title cell with top border */}
             <div className="border-t-4 border-white flex items-center pt-5 md:pt-1">
-              <h1 className="text-white font-bold uppercase leading-tight text-3xl sm:text-4xl lg:text-5xl w-full">
-                cảng neo đậu nước sâu miền trung
+              <h1 className="text-white font-bold uppercase leading-tight text-4xl md:text-5xl lg:text-6xl w-full">
+                {t('hero-banner.title')}
               </h1>
-            </div>
-            {/* Search cell with padding and margins */}
-            <div className="flex items-center">
-              <div className="bg-[#16b8f8] px-4 py-4 w-full mx-2 sm:mx-4 lg:mx-18 mb-20">
-                <h2 className="text-white title-font font-bold text-lg sm:text-lg 2xl:text-xl">
-                  Chúng tôi có thể giúp gì cho bạn?
-                </h2>
-                <div className="relative mt-3 bg-white">
-                  <input
-                    type="text"
-                    id="search"
-                    name="search"
-                    placeholder="Tìm kiếm..."
-                    className="w-full p-1 pr-[90px] placeholder:content-font placeholder:font-bold placeholder:text-sm placeholder:text-gray-400 pl-3"
-                  />
-                  <button className="absolute right-0 top-0 h-full bg-yellow-300 px-3 sm:px-4 hover:text-white hover:bg-black transition duration-300 content-font text-sm">
-                    Search
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
         </div>

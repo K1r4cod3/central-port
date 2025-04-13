@@ -9,7 +9,7 @@ const ContentBanner = () => {
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 title-font">Giới thiệu</h1>
           <p className="text-gray-700 leading-relaxed content-font">
-            Cảng Nước Sâu Miền Trung được thiết kế để đáp ứng các tiêu chuẩn quốc tế cao nhất, cung cấp các khả năng kỹ thuật tiên tiến để hỗ trợ nhiều hoạt động hàng hải. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi có diện tích 5.5 km² và được trang bị để tiếp nhận tàu lên đến 100.000 DWT. Dưới đây là thông số kỹ thuật chi tiết về các khu vực neo đậu và bản đồ để giúp bạn điều hướng cơ sở của chúng tôi một cách dễ dàng.
+            Cảng Nước Sâu Miền Trung được thiết kế để đáp ứng các tiêu chuẩn quốc tế cao nhất, cung cấp các khả năng kỹ thuật tiên tiến để hỗ trợ nhiều hoạt động hàng hải. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi có diện tích 55 km² và được trang bị để tiếp nhận tàu lên đến 200.000 DWT. Dưới đây là thông số kỹ thuật chi tiết về các khu vực neo đậu và bản đồ để giúp bạn điều hướng cơ sở của chúng tôi một cách dễ dàng.
           </p>
         </section>
 
@@ -74,8 +74,8 @@ const ContentBanner = () => {
           <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">Thông tin kỹ thuật bổ sung</h2>
           <ul className="space-y-3 content-font text-gray-700 list-disc pl-5">
             <li>Năng lực xếp dỡ: 30.000 tấn/ngày</li>
-            <li>Diện tích cảng: 5.5 km²</li>
-            <li>Năng lực tiếp nhận tàu: Lên đến 100.000 DWT</li>
+            <li>Diện tích cảng: 55 km²</li>
+            <li>Năng lực tiếp nhận tàu: Lên đến 200.000 DWT</li>
             <li>Tính năng an toàn: Dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để đảm bảo tuân thủ môi trường.</li>
           </ul>
         </section>

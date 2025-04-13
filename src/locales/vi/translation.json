@@ -20,5 +20,13 @@
     "service4": "Dịch vụ hỗ trợ thuyền viên và logistics",
     "service5": "Dịch vụ vận tải",
     "service6": "Dịch vụ giám định"
+  },
+
+  "technical-infomation-button": {
+    "item1": "THÔNG TIN KĨ THUẬT",
+    "item2": "Khu vực neo đậu số 1",
+    "item3": "Khu vực neo đậu số 2",
+    "item4": "Bản đồ khu vực"
   }
+
 } 

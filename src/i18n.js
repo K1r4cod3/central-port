@@ -1,27 +1,22 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-
-import translationEN from './locales/en/translation.json';
-import translationVI from './locales/vi/translation.json';
+import Backend from 'i18next-http-backend';
 
 i18n
   .use(LanguageDetector)
+  .use(Backend)
   .use(initReactI18next)
   .init({
-    resources: {
-      en: {
-        translation: translationEN
-      },
-      vi: {
-        translation: translationVI
-      }
+    fallbackLng: 'vi',
+    ns: ['translation', 'homepage', 'about-us', 'open-letter', 'footer'],
+    defaultNS: 'translation',
+    backend: {
+      loadPath: '/src/locales/{{lng}}/{{ns}}.json',
     },
-    fallbackLng: 'en',
-    debug: true,
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });
 
 export default i18n; 

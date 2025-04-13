@@ -2,8 +2,10 @@ import React from 'react'
 import './ExploreBanner.css'
 import pic5 from '../../../assets/5.jpg'
 import pic6 from '../../../assets/6.jpg'
+import { useTranslation } from 'react-i18next'
 
 const ExploreBanner = () => {
+  const { t } = useTranslation('homepage')
   return (
     <div className="py-10 md:py-16 bg-white">
       <div className="container mx-auto px-4 max-w-[1440px]">
@@ -11,14 +13,18 @@ const ExploreBanner = () => {
           {/* Card 1 - Text Only - Moved to top on mobile */}
           <div className="group relative overflow-hidden rounded-lg cursor-pointer p-4 md:p-6 flex flex-col justify-center h-auto md:h-[400px] order-first md:order-last">
             <h3 className="text-black text-lg md:text-xl font-bold mb-4 leading-relaxed title-font">
-              Cảng Neo Đậu Nước Sâu Miền Trung là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với các số liệu ấn tượng:
+              {t('explore-banner.explore-banner-title')}
             </h3>
             <ul className="text-black space-y-3 content-font">
               <li className="flex items-center">
-                <span className="text-base md:text-lg">Diện tích cảng: 5,5 km²</span>
+                <span className="text-base md:text-lg">
+                  {t('explore-banner.explore-banner-content1')}
+                </span>
               </li>
               <li className="flex items-center">
-                <span className="text-base md:text-lg">Năng lực tiếp nhận: Tàu 200.000 DWT</span>
+                <span className="text-base md:text-lg">
+                  {t('explore-banner.explore-banner-content2')}
+                </span>
               </li>
             </ul>
           </div>
@@ -32,7 +38,9 @@ const ExploreBanner = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70">
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 title-font">Working and learning</h2>
+                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 title-font">
+                  {t('explore-banner.explore-banner-item1')}
+                </h2>
               </div>
             </div>
           </div>
@@ -46,7 +54,9 @@ const ExploreBanner = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70">
               <div className="absolute bottom-0 p-6">
-                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 title-font">To do in the port</h2>
+                <h2 className="text-white text-2xl md:text-3xl font-bold mb-2 title-font">
+                  {t('explore-banner.explore-banner-item2')}
+                </h2>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ const ContentBanner = () => {
         <section className="mb-16">
           <h1 className="text-3xl font-bold text-blue-900 mb-6 title-font">Giới thiệu</h1>
           <p className="text-gray-700 leading-relaxed content-font">
-            Khu vực neo đậu số 1 tại Cảng Nước Sâu Miền Trung là một khu vực được thiết kế chiến lược để đảm bảo việc neo đậu an toàn và hiệu quả cho các tàu. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, khu vực này nằm trong khuôn viên cảng rộng 5.5 km² của chúng tôi, có khả năng tiếp nhận tàu lên đến 100.000 DWT. Với độ sâu tối ưu và bố trí rộng rãi, Khu vực neo đậu số 1 là lựa chọn lý tưởng cho các tàu từ 60.000 DWT đến 80.000 DWT, cung cấp không gian an toàn và đáng tin cậy cho các hoạt động hàng hải của bạn.
+            Khu vực neo đậu số 1 tại Cảng Nước Sâu Miền Trung là một khu vực được thiết kế chiến lược để đảm bảo việc neo đậu an toàn và hiệu quả cho các tàu. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, khu vực này nằm trong khuôn viên cảng rộng 55 km² của chúng tôi, có khả năng tiếp nhận tàu lên đến 200.000 DWT. Với độ sâu tối ưu và bố trí rộng rãi, Khu vực neo đậu số 1 là lựa chọn lý tưởng cho các tàu từ 60.000 DWT đến 80.000 DWT, cung cấp không gian an toàn và đáng tin cậy cho các hoạt động hàng hải của bạn.
           </p>
         </section>
 

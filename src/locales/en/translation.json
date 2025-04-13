@@ -21,5 +21,12 @@
     "service4": "Crew Support and Logistics Services",
     "service5": "Transportation Services",
     "service6": "Inspection Services"
+  },
+
+  "technical-infomation-button": {
+    "item1": "TECHNICAL SPECIFICATIONS",
+    "item2": "Anchorage Area No. 1",
+    "item3": "Anchorage Area No. 2",
+    "item4": "Anchorage Area Map"
   }
 } 

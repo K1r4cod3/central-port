@@ -6,7 +6,7 @@ import new4 from "../../../assets/4.jpg"
 
 export const NewsBanner = () => {
   return (
-    <div className="mx-auto mb-[40px] sm:mb-[60px] md:mb-[90px] max-w-[1440px] w-full px-4 sm:px-6 md:px-0">
+    <div className="mx-auto mb-[40px] sm:mb-[60px] md:mb-[90px] max-w-[1440px] w-full px-4 sm:px-6">
       <h2 className="text-xl sm:text-2xl md:text-3xl font-bold uppercase text-gray-800 mb-4 sm:mb-6 md:mb-8">
         Latest News
       </h2>

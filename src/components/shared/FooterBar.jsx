@@ -2,9 +2,11 @@ import React from 'react'
 import './FooterBar.css'
 import logo from '../../assets/logo1.png'
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 
 const FooterBar = () => {
+  const { t } = useTranslation('footer')
   return (
     <div className='bg-blue-900 text-white py-8'>
         <div className="container grid grid-cols-1 md:grid-cols-4 gap-4 max-w-[1440px] mx-auto px-6">
@@ -15,27 +17,29 @@ const FooterBar = () => {
 
           {/* Cột 2: Direct To */}
           <div>
-            <h5 className="text-2xl font-bold mb-4">Direct To</h5>
+            <h5 className="text-2xl font-bold mb-4">{t('direct-to')}</h5>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Technical Specifications</a></li>
-              <li><a href="#" className="hover:underline">Anchorage Areas</a></li>
-              <li><a href="#" className="hover:underline">Cargo Handling Services</a></li>
-              <li><a href="#" className="hover:underline">Contact</a></li>
+              <li><a href="#" className="hover:underline">{t('direct-to-content.content1')}</a></li>
+              <li><a href="#" className="hover:underline">{t('direct-to-content.content2')}</a></li>
+              <li><a href="#" className="hover:underline">{t('direct-to-content.content3')}</a></li>
+              <li><a href="#" className="hover:underline">{t('direct-to-content.content4')}</a></li>
             </ul>
           </div>
 
           {/* Cột 3: Contact Information */}
           <div>
-            <h5 className="text-2xl font-bold mb-4">Contact Information</h5>
-            <p>Central Deepwater Port</p>
-            <p>Nghi Son Area, Nghi Son District, Thanh Hoa Province, Vietnam</p>
-            <p>Tel/Fax: 024 9999 9889 | 023 6999 9889</p>
-            <p>Email: cangnuocsaumientrung@gmail.com</p>
+            <h5 className="text-2xl font-bold mb-4">{t('contact-information')}</h5>
+            <div className='text-sm'>
+              <p>{t('contact-information-content.content1')}</p>
+              <p>{t('contact-information-content.content2')}</p>
+              <p>{t('contact-information-content.content3')}</p>
+              <p>{t('contact-information-content.content4')}</p>
+            </div>
           </div>
 
           {/* Cột 4: Social Media */}
           <div className='md:ml-10'>
-            <h5 className="text-2xl font-bold mb-4">Social Media</h5>
+            <h5 className="text-2xl font-bold mb-4">{t('social-media')}</h5>
             <div className="flex space-x-4">
               <div className='w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4'>
                 <a href="https://www.facebook.com"><Facebook className='h-6 w-6 text-blue-600' /></a>
