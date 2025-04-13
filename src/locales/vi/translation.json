@@ -1,0 +1,24 @@
+{
+  "home": "Trang chủ",
+  "about": "Giới thiệu",
+  "services": "Dịch vụ",
+  "technical-information": "Thông số kĩ thuật",
+  "news": "Tin tức",
+  "contact": "Liên hệ",
+  "language": "Ngôn ngữ",
+
+  "about-button": {
+    "about-us": "Giới thiệu",
+    "open-letter": "Thư ngỏ",
+    "highlight-advantages": "Lợi thế nổi bật"
+  },
+
+  "services-button": {
+    "service1": "Dịch vụ xếp dỡ và chuyển tải hàng hóa",
+    "service2": "Dịch vụ neo đậu và kho bãi",
+    "service3": "Dịch vụ an toàn và bảo vệ môi trường",
+    "service4": "Dịch vụ hỗ trợ thuyền viên và logistics",
+    "service5": "Dịch vụ vận tải",
+    "service6": "Dịch vụ giám định"
+  }
+} 

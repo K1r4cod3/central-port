@@ -16,25 +16,24 @@ const HeroBanner = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="absolute inset-0 bg-black opacity-20"></div>
 
       {/* Parent container - centered vertically and horizontally */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* Content container - fixed width with responsive margins */}
-        <div className="w-[90%] sm:w-[85%] md:w-[70%] h-1/3 mx-auto">
+        <div className="w-[90%] sm:w-[85%] 2xl:w-[70%] h-1/3 mx-auto mb-30">
           {/* Grid layout for title and search */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
             {/* Title cell with top border */}
             <div className="border-t-4 border-white flex items-center pt-5 md:pt-1">
-              <h1 className="text-white font-bold uppercase leading-tight text-3xl sm:text-4xl md:text-6xl w-full">
-                cảng nước sâu miền trung
+              <h1 className="text-white font-bold uppercase leading-tight text-3xl sm:text-4xl lg:text-5xl w-full">
+                cảng neo đậu nước sâu miền trung
               </h1>
             </div>
-
             {/* Search cell with padding and margins */}
             <div className="flex items-center">
-              <div className="bg-[#16b8f8] px-4 sm:px-6 md:px-10 py-4 sm:py-5 md:py-8 w-full mx-2 sm:mx-4 md:mx-10">
-                <h2 className="text-white title-font font-bold text-lg sm:text-xl md:text-2xl">
+              <div className="bg-[#16b8f8] px-4 py-4 w-full mx-2 sm:mx-4 lg:mx-18 mb-20">
+                <h2 className="text-white title-font font-bold text-lg sm:text-lg 2xl:text-xl">
                   Chúng tôi có thể giúp gì cho bạn?
                 </h2>
                 <div className="relative mt-3 bg-white">
@@ -43,9 +42,9 @@ const HeroBanner = () => {
                     id="search"
                     name="search"
                     placeholder="Tìm kiếm..."
-                    className="w-full p-2 pr-[90px] placeholder:content-font placeholder:font-bold placeholder:text-sm sm:placeholder:text-base placeholder:text-gray-400 pl-3"
+                    className="w-full p-1 pr-[90px] placeholder:content-font placeholder:font-bold placeholder:text-sm placeholder:text-gray-400 pl-3"
                   />
-                  <button className="absolute right-0 top-0 h-full bg-yellow-300 px-3 sm:px-4 hover:text-white hover:bg-black transition duration-300 content-font text-sm sm:text-base">
+                  <button className="absolute right-0 top-0 h-full bg-yellow-300 px-3 sm:px-4 hover:text-white hover:bg-black transition duration-300 content-font text-sm">
                     Search
                   </button>
                 </div>

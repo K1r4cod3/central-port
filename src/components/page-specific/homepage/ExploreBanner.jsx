@@ -11,7 +11,7 @@ const ExploreBanner = () => {
           {/* Card 1 - Text Only - Moved to top on mobile */}
           <div className="group relative overflow-hidden rounded-lg cursor-pointer p-4 md:p-6 flex flex-col justify-center h-auto md:h-[400px] order-first md:order-last">
             <h3 className="text-black text-lg md:text-xl font-bold mb-4 leading-relaxed title-font">
-              Cảng Nước Sâu Miền Trung là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với các số liệu ấn tượng:
+              Cảng Neo Đậu Nước Sâu Miền Trung là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với các số liệu ấn tượng:
             </h3>
             <ul className="text-black space-y-3 content-font">
               <li className="flex items-center">

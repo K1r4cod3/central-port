@@ -20,7 +20,7 @@ const HighlightService = () => {
           {/* Right Column - Description */}
           <div className="border-l-0 md:border-l-2 md:border-gray-300 md:pl-8">
             <p className="text-gray-600 content-font text-base md:text-lg">
-              Tại Cảng Nước Sâu Miền Trung, chúng tôi cung cấp đa dạng các dịch vụ chất lượng cao, đáp ứng mọi nhu cầu
+              Tại Cảng Neo Đậu Nước Sâu Miền Trung, chúng tôi cung cấp đa dạng các dịch vụ chất lượng cao, đáp ứng mọi nhu cầu
               vận chuyển và logistics của khách hàng. Với cơ sở vật chất hiện đại và đội ngũ chuyên nghiệp, chúng tôi
               cam kết mang đến trải nghiệm dịch vụ tốt nhất cho đối tác trong và ngoài nước.
             </p>

@@ -1,0 +1,25 @@
+{
+
+  "home": "Home",
+  "about": "About",
+  "services": "Services",
+  "technical-information": "Technical Information",
+  "news": "News",
+  "contact": "Contact",
+  "language": "Language",
+
+  "about-button": {
+    "about-us": "About Us",
+    "open-letter": "Open Letter",
+    "highlight-advantages": "Highlight Advantages"
+  },
+
+  "services-button": {
+    "service1": "Cargo Handling and Transshipment Services",
+    "service2": "Anchorage and Warehousing Services",
+    "service3": "Safety and Environmental Protection Services",
+    "service4": "Crew Support and Logistics Services",
+    "service5": "Transportation Services",
+    "service6": "Inspection Services"
+  }
+} 

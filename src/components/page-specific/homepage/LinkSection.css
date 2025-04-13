@@ -10,3 +10,9 @@
 .title-font {
     font-family: 'Montserrat', sans-serif;
 }
+
+@media (max-width: 768px) {
+    .custom-subtitle {
+      font-size: 18px;
+    }
+}

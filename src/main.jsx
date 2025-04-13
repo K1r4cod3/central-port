@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './i18n'
 import Navbar from './components/shared/Navbar'
 import FooterBar from './components/shared/FooterBar'
 import Home from './pages/Home/Home'

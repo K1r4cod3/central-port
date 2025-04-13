@@ -1,17 +1,26 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import "./Navbar.css"
-import { X, Search, Menu, ChevronDown } from "lucide-react"
+import { X, Search, Menu, ChevronDown, Phone } from "lucide-react"
 import portLogo from "../../assets/logo1.png"
+import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null)
+  const [activeMegaMenu, setActiveMegaMenu] = useState(null) // State để quản lý mega menu
+  const location = useLocation() // Hook để theo dõi route
+  const { t, i18n } = useTranslation()
 
-  // Prevent body scroll when menu is open
+  // Đóng mega menu khi route thay đổi
+  useEffect(() => {
+    setActiveMegaMenu(null)
+  }, [location.pathname])
+
+  // Prevent body scroll khi menu mobile mở
   useEffect(() => {
     if (showNav) {
       document.body.classList.add("menu-open")
@@ -32,15 +41,26 @@ const Navbar = () => {
     setActiveMobileSubmenu(activeMobileSubmenu === menu ? null : menu)
   }
 
+  // Hàm để bật/tắt mega menu
+  const handleMegaMenu = (menu) => {
+    setActiveMegaMenu(activeMegaMenu === menu ? null : menu)
+  }
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setShowLanguageMenu(false);
+  };
+
   return (
     <>
-      {/* Top bar - visible only on desktop */}
-      <div className="w-full h-7 bg-blue-900 hidden md:block">
+      {/* Top bar - chỉ hiển thị trên desktop */}
+      <div className="w-full h-7 bg-blue-900 hidden lg:block">
         <div className="max-w-[1250px] mx-auto px-4 h-full flex justify-end items-center">
           <div className="flex items-center gap-4">
             <div className="flex items-center h-full">
+              <Phone className="w-4 h-4 text-white mr-2" />
               <Link to="" className="text-white hover:text-blue-200 content-font font-semibold text-sm">
-                Liên hệ
+                {t('contact')}
               </Link>
             </div>
             <div className="relative flex items-center h-full">
@@ -48,15 +68,21 @@ const Navbar = () => {
                 className="text-white hover:text-blue-200 flex items-center gap-1 content-font font-semibold text-sm"
                 onClick={() => setShowLanguageMenu(!showLanguageMenu)}
               >
-                Ngôn ngữ
+                {t('language')}
                 <ChevronDown className={`w-4 h-4 transition-transform ${showLanguageMenu ? "rotate-180" : ""}`} />
               </button>
               {showLanguageMenu && (
                 <div className="absolute right-0 mt-1 top-full w-32 bg-white rounded-md shadow-lg py-1 z-50">
-                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  <button 
+                    className={`block w-full text-left px-4 py-2 text-sm ${i18n.language === 'vi' ? 'bg-blue-100 text-blue-900' : 'text-gray-700 hover:bg-gray-100'}`}
+                    onClick={() => changeLanguage('vi')}
+                  >
                     Tiếng Việt
                   </button>
-                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                  <button 
+                    className={`block w-full text-left px-4 py-2 text-sm ${i18n.language === 'en' ? 'bg-blue-100 text-blue-900' : 'text-gray-700 hover:bg-gray-100'}`}
+                    onClick={() => changeLanguage('en')}
+                  >
                     English
                   </button>
                 </div>
@@ -70,7 +96,7 @@ const Navbar = () => {
       <div
         className={`flex justify-between items-center max-w-[1250px] h-20 mx-auto px-4 ${showNav ? "lg:relative fixed top-0 left-0 right-0 z-[51] bg-white" : ""}`}
       >
-        {/* Mobile menu button - only visible on mobile */}
+        {/* Nút menu mobile - chỉ hiển thị trên mobile */}
         <div className="lg:hidden">
           <button
             id="menu-toggle"
@@ -82,7 +108,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Logo - centered on mobile */}
+        {/* Logo - căn giữa trên mobile */}
         <div className="lg:flex-none flex-1 flex justify-center lg:justify-start">
           <Link to="/">
             <div className="flex items-center">
@@ -92,36 +118,56 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Navigation cho desktop */}
         <div className="hidden lg:block h-full">
           <ul className="flex h-full gap-4" id="nav">
             <li className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400">
               <Link to="/" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
-                Trang chủ
+                {t('home')}
               </Link>
             </li>
-            <li className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400">
+            <li
+              className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400"
+              onMouseEnter={() => handleMegaMenu("intro")}
+              onMouseLeave={() => handleMegaMenu(null)}
+            >
               <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
-                Giới thiệu
+                {t('about')}
               </Link>
-              {/* mega menu */}
-              <div className="fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 ">
+              {/* Mega menu */}
+              <div
+                className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 transition duration-500 ${
+                  activeMegaMenu === "intro" ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+              >
                 <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
                   <div>
-                    <ul className="content-font">
+                    <ul className="content-font text-lg font-bold uppercase">
                       <li className="py-1 m-4">
-                        <Link to="/about-us" className="hover:underline">
-                          VỀ CHÚNG TÔI
+                        <Link
+                          to="/about-us"
+                          className="underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          {t('about-button.about-us')}
                         </Link>
                       </li>
                       <li className="py-1 m-4">
-                        <Link to="/open-letter" className="hover:underline">
-                          THƯ NGỎ
+                        <Link
+                          to="/open-letter"
+                          className="underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          {t('about-button.open-letter')}
                         </Link>
                       </li>
                       <li className="py-1 m-4">
-                        <Link to="" className="hover:underline">
-                          LỢI THẾ NỔI BẬT
+                        <Link
+                          to=""
+                          className="underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          {t('about-button.highlight-advantages')}
                         </Link>
                       </li>
                     </ul>
@@ -129,28 +175,45 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400">
+            <li
+              className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400"
+              onMouseEnter={() => handleMegaMenu("services")}
+              onMouseLeave={() => handleMegaMenu(null)}
+            >
               <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
-                Dịch vụ
+                {t('services')}
               </Link>
-              {/* mega menu */}
-              <div className="fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 ">
+              {/* Mega menu */}
+              <div
+                className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white px-5 py-5 z-50 transition duration-500 ${
+                  activeMegaMenu === "services" ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+              >
                 <div className="container grid grid-cols-4 gap-8 mx-auto max-w-[1200px]">
                   <div>
                     <Link
                       to="/cargo-handling-and-transshipment-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ xếp dỡ hàng hóa và chuyển tải hàng hóa
+                      {t('services-button.service1')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Chuyển tải xăng dầu
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Cẩu hàng hóa trên biển
                         </Link>
                       </li>
@@ -160,22 +223,35 @@ const Navbar = () => {
                     <Link
                       to="/anchorage-and-warehousing-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ neo đậu và kho bãi
+                      {t('services-button.service2')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Neo đậu tàu thuyền
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Neo đậu chuyển tải xăng dầu
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Kho dầu hải quan
                         </Link>
                       </li>
@@ -185,23 +261,36 @@ const Navbar = () => {
                     <Link
                       to="/safety-and-environmental-protection-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ an toàn và bảo vệ môi trường
+                      {t('services-button.service3')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
-                          Kiểm soát và xử lý tràn dầu{" "}
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          Kiểm soát và xử lý tràn dầu
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Thu gom rác thải
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
-                          Cho thuê phao chống va & phao chống tràn dầu{" "}
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          Cho thuê phao chống va & phao chống tràn dầu
                         </Link>
                       </li>
                     </ul>
@@ -210,23 +299,36 @@ const Navbar = () => {
                     <Link
                       to="/crew-support-and-logistics-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ Hỗ trợ Thuyền viên và Logistics{" "}
+                      {t('services-button.service4')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
-                          Dịch vụ đưa đón thuyền viên từ tàu đi bờ{" "}
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          Dịch vụ đưa đón thuyền viên từ tàu đi bờ
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Dịch vụ khai báo thuyền viên đi bờ
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
-                          Dịch vụ trao đổi thuyền viên{" "}
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          Dịch vụ trao đổi thuyền viên
                         </Link>
                       </li>
                     </ul>
@@ -235,13 +337,18 @@ const Navbar = () => {
                     <Link
                       to="/transportation-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ Vận tải{" "}
+                      {t('services-button.service5')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
-                          Cho thuê tàu vận tải{" "}
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
+                          Cho thuê tàu vận tải
                         </Link>
                       </li>
                     </ul>
@@ -250,22 +357,35 @@ const Navbar = () => {
                     <Link
                       to="/inspection-services"
                       className="title-font font-bold underline hover:text-blue-300 text-xl"
+                      onClick={() => handleMegaMenu(null)}
                     >
-                      Dịch vụ giám định
+                      {t('services-button.service6')}
                     </Link>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Giám định hàng nhập
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Giám định hàng xuất
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="" className="hover:underline">
+                        <Link
+                          to=""
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           Giám định nhiên liệu tàu
                         </Link>
                       </li>
@@ -274,32 +394,56 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400">
+            <li
+              className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400"
+              onMouseEnter={() => handleMegaMenu("tech")}
+              onMouseLeave={() => handleMegaMenu(null)}
+            >
               <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
-                Thông số kĩ thuật
+                {t('technical-information')}
               </Link>
-              {/* mega menu */}
-              <div className="fixed left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 opacity-0 transition invisible duration-500 group-hover:visible group-hover:opacity-100 ">
+              {/* Mega menu */}
+              <div
+                className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 transition duration-500 ${
+                  activeMegaMenu === "tech" ? "opacity-100 visible" : "opacity-0 invisible"
+                }`}
+              >
                 <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
                   <div>
                     <ul className="content-font">
                       <li className="py-1">
-                        <Link to="/technical-information" className="hover:underline">
+                        <Link
+                          to="/technical-information"
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           THÔNG TIN KĨ THUẬT
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="/anchorage-area-1" className="hover:underline">
+                        <Link
+                          to="/anchorage-area-1"
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           KHU VỰC NEO ĐẬU SỐ 1
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="/anchorage-area-2" className="hover:underline">
+                        <Link
+                          to="/anchorage-area-2"
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           KHU VỰC NEO ĐẬU SỐ 2
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link to="/area-map" className="hover:underline">
+                        <Link
+                          to="/area-map"
+                          className="hover:underline"
+                          onClick={() => handleMegaMenu(null)}
+                        >
                           BẢN ĐỒ KHU VỰC
                         </Link>
                       </li>
@@ -310,20 +454,20 @@ const Navbar = () => {
             </li>
             <li className="flex items-center content-font group pb-[4px] box-border hover:pb-0 hover:border-b-4 hover:border-b-blue-400">
               <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
-                Tin tức
+                {t('news')}
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Search button */}
+        {/* Nút tìm kiếm */}
         <div className="lg:hidden">
           <button className={`p-2 ${showNav ? "text-blue-900" : "text-[#0a3a7d]"}`}>
             <Search className="h-6 w-6" />
           </button>
         </div>
 
-        {/* Search box - visible only on desktop */}
+        {/* Thanh tìm kiếm - chỉ hiển thị trên desktop */}
         <div className="hidden lg:flex border border-gray-300 items-center">
           <input type="text" id="search" name="search" placeholder="Tìm kiếm..." className="p-2" />
           <button className="bg-[#16b8f8] px-4 py-3 text-white">
@@ -332,7 +476,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation - Full screen overlay */}
+      {/* Menu mobile - toàn màn hình */}
       {showNav && (
         <div
           id="mobile-menu"
@@ -354,7 +498,7 @@ const Navbar = () => {
           </div>
 
           <div className="p-4">
-            {/* Mobile menu items */}
+            {/* Các mục menu mobile */}
             <nav className="mb-2">
               <ul className="space-y-4">
                 <li className="border-b border-blue-800 pb-4">
@@ -363,7 +507,7 @@ const Navbar = () => {
                     className="block py-2 text-xl font-bold text-white underline"
                     onClick={() => setShowNav(false)}
                   >
-                    Trang chủ
+                    {t('home')}
                   </Link>
                 </li>
 
@@ -373,7 +517,7 @@ const Navbar = () => {
                     onClick={() => toggleMobileSubmenu("intro")}
                   >
                     <Link to="" className="block py-2 text-xl font-bold text-white underline">
-                      Giới thiệu
+                      {t('about')}
                     </Link>
                     <ChevronDown
                       className={`w-5 h-5 transition-transform ${activeMobileSubmenu === "intro" ? "rotate-180" : ""}`}
@@ -406,7 +550,7 @@ const Navbar = () => {
                     onClick={() => toggleMobileSubmenu("services")}
                   >
                     <Link to="" className="block py-2 text-xl font-bold text-white underline">
-                      Dịch vụ
+                      {t('services')}
                     </Link>
                     <ChevronDown
                       className={`w-5 h-5 transition-transform ${activeMobileSubmenu === "services" ? "rotate-180" : ""}`}
@@ -463,7 +607,103 @@ const Navbar = () => {
                         </ul>
                       </div>
 
-                      {/* Add more service categories as needed */}
+                      <div>
+                        <Link
+                          to="/safety-and-environmental-protection-services"
+                          className="block font-bold text-white"
+                          onClick={() => setShowNav(false)}
+                        >
+                          Dịch vụ an toàn và bảo vệ môi trường
+                        </Link>
+                        <ul className="pl-4 py-1">
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Kiểm soát và xử lý tràn dầu
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Thu gom rác thải
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Cho thuê phao chống va & phao chống tràn dầu
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <Link
+                          to="/crew-support-and-logistics-services"
+                          className="block font-bold text-white"
+                          onClick={() => setShowNav(false)}
+                        >
+                          Dịch vụ Hỗ trợ Thuyền viên và Logistics
+                        </Link>
+                        <ul className="pl-4 py-1">
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Dịch vụ đưa đón thuyền viên từ tàu đi bờ
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Dịch vụ khai báo thuyền viên đi bờ
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Dịch vụ trao đổi thuyền viên
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <Link
+                          to="/transportation-services"
+                          className="block font-bold text-white"
+                          onClick={() => setShowNav(false)}
+                        >
+                          Dịch vụ Vận tải
+                        </Link>
+                        <ul className="pl-4 py-1">
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Cho thuê tàu vận tải
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <Link
+                          to="/inspection-services"
+                          className="block font-bold text-white"
+                          onClick={() => setShowNav(false)}
+                        >
+                          Dịch vụ giám định
+                        </Link>
+                        <ul className="pl-4 py-1">
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Giám định hàng nhập
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Giám định hàng xuất
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
+                              Giám định nhiên liệu tàu
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   )}
                 </li>
@@ -474,7 +714,7 @@ const Navbar = () => {
                     onClick={() => toggleMobileSubmenu("tech")}
                   >
                     <Link to="" className="block py-2 text-xl font-bold text-white underline">
-                      Thông số kĩ thuật
+                      {t('technical-information')}
                     </Link>
                     <ChevronDown
                       className={`w-5 h-5 transition-transform ${activeMobileSubmenu === "tech" ? "rotate-180" : ""}`}
@@ -492,12 +732,20 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link to="/anchorage-area-1" className="block text-white" onClick={() => setShowNav(false)}>
+                        <Link
+                          to="/anchorage-area-1"
+                          className="block text-white"
+                          onClick={() => setShowNav(false)}
+                        >
                           KHU VỰC NEO ĐẬU SỐ 1
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link to="/anchorage-area-2" className="block text-white" onClick={() => setShowNav(false)}>
+                        <Link
+                          to="/anchorage-area-2"
+                          className="block text-white"
+                          onClick={() => setShowNav(false)}
+                        >
                           KHU VỰC NEO ĐẬU SỐ 2
                         </Link>
                       </li>
@@ -516,18 +764,18 @@ const Navbar = () => {
                     className="block py-2 text-xl font-bold text-white underline"
                     onClick={() => setShowNav(false)}
                   >
-                    Tin tức
+                    {t('news')}
                   </Link>
                 </li>
               </ul>
             </nav>
 
-            {/* Footer links in mobile menu */}
+            {/* Footer links trong menu mobile */}
             <div className="pt-4 border-t border-blue-800">
               <ul className="space-y-4">
                 <li>
                   <Link to="" className="block text-white">
-                    Liên hệ
+                    {t('contact')}
                   </Link>
                 </li>
                 <li>
@@ -536,13 +784,15 @@ const Navbar = () => {
                       className="text-white flex items-center gap-1 w-full justify-between content-font font-semibold no-highlight"
                       onClick={() => setShowLanguageMenu(!showLanguageMenu)}
                     >
-                      <span>Ngôn ngữ</span>
-                      <ChevronDown className={`w-4 h-4 transition-transform ${showLanguageMenu ? "rotate-180" : ""}`} />
+                      <span>{t('language')}</span>
+                      <ChevronDown
+                        className={`w-4 h-4 transition-transform ${showLanguageMenu ? "rotate-180" : ""}`}
+                      />
                     </button>
                     {showLanguageMenu && (
                       <div className="mt-2 bg-blue-800 rounded py-2 px-4">
-                        <button className="block w-full text-left py-2 text-white">Tiếng Việt</button>
-                        <button className="block w-full text-left py-2 text-white">English</button>
+                        <button className="block w-full text-left py-2 text-white" onClick={() => changeLanguage('vi')}>Tiếng Việt</button>
+                        <button className="block w-full text-left py-2 text-white" onClick={() => changeLanguage('en')}>English</button>
                       </div>
                     )}
                   </div>
