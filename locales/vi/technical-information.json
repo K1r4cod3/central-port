@@ -1,0 +1,64 @@
+{
+    "title": "Thông tin kỹ thuật",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Cảng Nước Sâu Miền Trung được thiết kế để đáp ứng các tiêu chuẩn quốc tế cao nhất, cung cấp các khả năng kỹ thuật tiên tiến để hỗ trợ nhiều hoạt động hàng hải. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi có diện tích 55 km² và được trang bị để tiếp nhận tàu lên đến 200.000 DWT. Dưới đây là thông số kỹ thuật chi tiết về các khu vực neo đậu và bản đồ để giúp bạn điều hướng cơ sở của chúng tôi một cách dễ dàng."
+    },
+    "anchoring-areas": {
+        "area1": {
+            "title": "Khu vực neo đậu số 1",
+            "area": "Diện tích: 2.4 km²",
+            "depth": "Độ sâu: 13.6 m đến 15.8 m",
+            "suitable": "Phù hợp cho: Tàu từ 60.000 DWT đến 80.000 DWT (mớn nước tối đa: 14.5 m)",
+            "vhf": "Liên lạc VHF: CH16 cho kiểm soát cảng, CH09 cho hoa tiêu",
+            "coordinates": {
+                "title": "Tọa độ:",
+                "point1": "DVNS 1: 19°18'30\"N - 105°47'30\"E",
+                "point2": "DVNS 2: 19°18'30\"N - 105°48'30\"E",
+                "point3": "DVNS 3: 19°17'30\"N - 105°48'30\"E",
+                "point4": "DVNS 4: 19°17'30\"N - 105°47'30\"E"
+            }
+        },
+        "area2": {
+            "title": "Khu vực neo đậu số 2",
+            "area": "Diện tích: 2.9 km²",
+            "depth": "Độ sâu: 17.0 m đến 20.8 m",
+            "suitable": "Phù hợp cho: Tàu trên 80.000 DWT (mớn nước tối đa: 18.5 m)",
+            "vhf": "Liên lạc VHF: CH16 cho kiểm soát cảng, CH09 cho hoa tiêu",
+            "coordinates": {
+                "title": "Tọa độ:",
+                "point1": "DVNS 5: 19°17'30\"N - 105°48'30\"E",
+                "point2": "DVNS 6: 19°17'30\"N - 105°49'30\"E",
+                "point3": "DVNS 7: 19°16'30\"N - 105°49'30\"E",
+                "point4": "DVNS 8: 19°16'30\"N - 105°48'30\"E"
+            }
+        }
+    },
+    "map": {
+        "title": "Bản đồ khu vực neo đậu",
+        "description": "Các khu vực neo đậu của chúng tôi được thiết kế chiến lược để đảm bảo hoạt động an toàn và hiệu quả cho tất cả các tàu. Bản đồ dưới đây cung cấp cái nhìn tổng quan rõ ràng về Khu vực neo đậu số 1 và số 2, bao gồm tọa độ và phạm vi độ sâu, để hỗ trợ việc điều hướng và lập kế hoạch."
+    },
+    "additional-info": {
+        "title": "Thông tin kỹ thuật bổ sung",
+        "items": {
+            "item1": "Năng lực xếp dỡ: 30.000 tấn/ngày",
+            "item2": "Diện tích cảng: 55 km²",
+            "item3": "Năng lực tiếp nhận tàu: Lên đến 200.000 DWT",
+            "item4": "Tính năng an toàn: Dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để đảm bảo tuân thủ môi trường."
+        }
+    },
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1-title": "Tổng quan khu vực neo đậu",
+        "item1-content": "Xem bố trí của các khu vực neo đậu với các tàu được neo đậu an toàn.",
+        "item2-title": "Bản đồ kỹ thuật",
+        "item2-content": "Khám phá bản đồ chi tiết của các khu vực neo đậu với tọa độ và phạm vi độ sâu.",
+        "item3-title": "Hoạt động xếp dỡ hàng hóa",
+        "item3-content": "Xem thiết bị tiên tiến của chúng tôi đang xử lý hàng hóa một cách hiệu quả."
+    },
+    "contact-banner": {
+        "title": "Cần thêm thông tin kỹ thuật hoặc hỗ trợ cho hoạt động của bạn?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để tìm hiểu cách Cảng Nước Sâu Miền Trung có thể hỗ trợ nhu cầu hàng hải của bạn!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

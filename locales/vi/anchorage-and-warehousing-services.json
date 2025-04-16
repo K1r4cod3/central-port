@@ -1,0 +1,51 @@
+{
+    "title": "dịch vụ neo đậu và kho bãi",
+    "contact-button": "Liên Hệ Ngay",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Cảng Nước Sâu Miền Trung cung cấp dịch vụ neo đậu và kho bãi an toàn, đáng tin cậy và hiệu quả để hỗ trợ hoạt động hàng hải của bạn. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi có hai khu vực neo đậu được thiết kế tối ưu và các giải pháp kho bãi tiên tiến, phục vụ các tàu lên đến 200.000 DWT. Dù bạn cần neo đậu an toàn cho tàu, cơ sở chuyển tải xăng dầu, hay kho ngoại quan cho dầu, chúng tôi đều có hạ tầng và chuyên môn để đáp ứng nhu cầu của bạn."
+    },
+    "services": {
+        "title": "Dịch vụ của chúng tôi",
+        "item1-title": "Neo đậu tàu thuyền",
+        "item1-content1": "Chúng tôi cung cấp dịch vụ neo đậu an toàn và đáng tin cậy cho tàu thuyền mọi kích cỡ, với hai khu vực được chỉ định:",
+        "area1": {
+            "title": "Khu vực neo đậu số 1:",
+            "details": "Diện tích 2.4 km², độ sâu 13.6 m - 15.8 m, phù hợp cho tàu từ 60.000 DWT đến 80.000 DWT (mớn nước tối đa: 14.5 m)."
+        },
+        "area2": {
+            "title": "Khu vực neo đậu số 2:",
+            "details": "Diện tích 2.9 km², độ sâu 17.0 m - 20.8 m, lý tưởng cho tàu trên 80.000 DWT (mớn nước tối đa: 18.5 m)."
+        },
+        "item1-content2": "Hỗ trợ 24/7 đảm bảo tàu của bạn luôn sẵn sàng hoạt động, với các kênh liên lạc VHF (CH16 cho kiểm soát cảng, CH09 cho hoa tiêu) để phối hợp suôn sẻ.",
+        "item2-title": "Neo đậu chuyển tải xăng dầu",
+        "item2-content": "Chúng tôi cung cấp dịch vụ neo đậu chuyên biệt cho chuyển tải xăng dầu, đảm bảo quá trình chuyển giao sản phẩm dầu an toàn và hiệu quả. Hạ tầng của chúng tôi được thiết kế để xử lý tàu chở dầu với các giao thức an toàn nghiêm ngặt, giảm thiểu rủi ro và đảm bảo tuân thủ tiêu chuẩn quốc tế. Với độ sâu lên đến 20.8 m tại khu vực neo đậu số 2, chúng tôi có thể tiếp nhận các tàu chở dầu lớn để thực hiện chuyển tải suôn sẻ.",
+        "item3-title": "Kho dầu ngoại quan",
+        "item3-content": "Cơ sở kho dầu ngoại quan của chúng tôi cung cấp giải pháp lưu trữ an toàn và hiệu quả cho các sản phẩm dầu. Được thiết kế theo tiêu chuẩn quốc tế, kho bãi của chúng tôi đảm bảo an toàn và chất lượng cho hàng hóa dầu của bạn, đồng thời cung cấp các tùy chọn lưu trữ linh hoạt. Dù bạn cần lưu trữ ngắn hạn hay dài hạn, chúng tôi đều có giải pháp phù hợp để hỗ trợ chuỗi cung ứng của bạn."
+    },
+    "why-choose-us": {
+        "title": "Tại Sao Lại Chọn Chúng Tôi?",
+        "item1-title": "Khu vực neo đậu chiến lược",
+        "item1-content": "Hai khu vực neo đậu được thiết kế tối ưu để tiếp nhận nhiều loại tàu, đảm bảo an toàn và hiệu quả.",
+        "item2-title": "Hạ tầng tiên tiến",
+        "item2-content": "Được trang bị các cơ sở hiện đại, chúng tôi cung cấp giải pháp lưu trữ và chuyển tải an toàn cho dầu và các hàng hóa khác.",
+        "item3-title": "An toàn và tuân thủ",
+        "item3-content": "Chúng tôi tuân thủ nghiêm ngặt các tiêu chuẩn an toàn và môi trường, đảm bảo hoạt động an toàn cho tất cả tàu và hàng hóa.",
+        "item4-title": "Hỗ trợ 24/7",
+        "item4-content": "Đội ngũ tận tâm của chúng tôi luôn sẵn sàng hỗ trợ các nhu cầu neo đậu, chuyển tải và lưu trữ, giảm thiểu thời gian gián đoạn."
+    },
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1-title": "Khu vực neo đậu",
+        "item1-content": "Khám phá hai khu vực neo đậu của chúng tôi với các tàu được neo đậu an toàn, sẵn sàng cho hoạt động.",
+        "item2-title": "Hoạt động chuyển tải xăng dầu",
+        "item2-content": "Xem cách chúng tôi quản lý chuyển tải xăng dầu với sự chính xác và an toàn.",
+        "item3-title": "Cơ sở kho dầu ngoại quan",
+        "item3-content": "Xem qua các giải pháp lưu trữ an toàn của chúng tôi cho các sản phẩm dầu."
+    },
+    "contact": {
+        "title": "Bạn đang tìm kiếm giải pháp neo đậu và kho bãi đáng tin cậy?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để tìm hiểu thêm về cách chúng tôi có thể hỗ trợ hoạt động hàng hải và logistics của bạn!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

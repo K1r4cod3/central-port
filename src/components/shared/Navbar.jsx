@@ -3,13 +3,14 @@
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
 import "./Navbar.css"
-import { X, Search, Menu, ChevronDown, Phone } from "lucide-react"
+import { X, Search, Menu, ChevronDown, Phone, Truck, Map, Ship, LifeBuoy, Container } from "lucide-react"
 import portLogo from "../../assets/logo1.png"
 import { useTranslation } from 'react-i18next'
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false)
   const [showLanguageMenu, setShowLanguageMenu] = useState(false)
+  const [showContactMenu, setShowContactMenu] = useState(false) // State for contact dropdown
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null)
   const [activeMegaMenu, setActiveMegaMenu] = useState(null) // State để quản lý mega menu
   const location = useLocation() // Hook để theo dõi route
@@ -57,11 +58,25 @@ const Navbar = () => {
       <div className="w-full h-7 bg-blue-900 hidden lg:block">
         <div className="max-w-[1250px] mx-auto px-4 h-full flex justify-end items-center">
           <div className="flex items-center gap-4">
-            <div className="flex items-center h-full">
-              <Phone className="w-4 h-4 text-white mr-2" />
-              <Link to="" className="text-white hover:text-blue-200 content-font font-semibold text-sm">
+          <div className="relative flex items-center h-full">
+              <button
+                className="text-white hover:text-blue-200 flex items-center gap-1 content-font font-semibold text-sm"
+                onClick={() => setShowContactMenu(!showContactMenu)}
+              >
+                <Phone className="w-4 h-4 mr-2" />
                 {t('contact')}
-              </Link>
+                <ChevronDown className={`w-4 h-4 transition-transform ${showContactMenu ? "rotate-180" : ""}`} />
+              </button>
+              {showContactMenu && (
+                <div className="absolute right-0 mt-1 top-full w-48 bg-gray-200 rounded-md shadow-lg py-1 z-50">
+                  <div className="block w-full text-left px-4 py-2 text-sm text-gray-700 font-semibold">
+                    +024 9999 9889
+                  </div>
+                  <div className="block w-full text-left px-4 py-2 text-sm text-gray-700 font-semibold">
+                    +023 6999 9889
+                  </div>
+                </div>
+              )}
             </div>
             <div className="relative flex items-center h-full">
               <button
@@ -131,9 +146,9 @@ const Navbar = () => {
               onMouseEnter={() => handleMegaMenu("intro")}
               onMouseLeave={() => handleMegaMenu(null)}
             >
-              <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
+              <p className="px-4 py-4 text-lg font-bold text-[#0a3a7d] cursor-pointer">
                 {t('about')}
-              </Link>
+              </p>
               {/* Mega menu */}
               <div
                 className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 transition duration-500 ${
@@ -141,8 +156,9 @@ const Navbar = () => {
                 }`}
               >
                 <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                  {/* Left side: Existing intro links */}
                   <div>
-                    <ul className="content-font text-lg font-bold uppercase">
+                    <ul className="content-font text-lg font-bold uppercase ml-30">
                       <li className="py-1 m-4">
                         <Link
                           to="/about-us"
@@ -172,6 +188,39 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
+                  {/* Right side: Rectangular buttons */}
+                  <div className="container grid grid-cols-3 gap-5 w-fit h-fit">
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Truck className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Map className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Ship className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <LifeBuoy className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Container className="w-15 h-15"/>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </li>
@@ -180,216 +229,252 @@ const Navbar = () => {
               onMouseEnter={() => handleMegaMenu("services")}
               onMouseLeave={() => handleMegaMenu(null)}
             >
-              <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
+              <p className="px-4 py-4 text-lg font-bold text-[#0a3a7d] cursor-pointer">
                 {t('services')}
-              </Link>
+              </p>
               {/* Mega menu */}
               <div
-                className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-700 text-white px-5 py-5 z-50 transition duration-500 ${
+                className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-[#173ba7] text-white px-5 py-5 z-50 transition duration-500 ${
                   activeMegaMenu === "services" ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}
               >
-                <div className="container grid grid-cols-4 gap-8 mx-auto max-w-[1200px]">
-                  <div>
-                    <Link
-                      to="/cargo-handling-and-transshipment-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
-                    >
-                      {t('services-button.service1')}
-                    </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Chuyển tải xăng dầu
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Cẩu hàng hóa trên biển
-                        </Link>
-                      </li>
-                    </ul>
+                <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                  {/* Left side: Existing services */}
+                  <div className="grid grid-cols-2 gap-6">
+                    <div>
+                      <Link
+                        to="/cargo-handling-and-transshipment-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service1.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/cargo-handling-and-transshipment-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service1.item1')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/cargo-handling-and-transshipment-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service1.item2')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <Link
+                        to="/anchorage-and-warehousing-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service2.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/anchorage-and-warehousing-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service2.item1')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/anchorage-and-warehousing-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service2.item2')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/anchorage-and-warehousing-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service2.item3')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <Link
+                        to="/safety-and-environmental-protection-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service3.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/safety-and-environmental-protection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service3.item1')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/safety-and-environmental-protection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service3.item2')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/safety-and-environmental-protection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service3.item3')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <Link
+                        to="/crew-support-and-logistics-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service4.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/crew-support-and-logistics-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service4.item1')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/crew-support-and-logistics-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service4.item2')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/crew-support-and-logistics-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service4.item3')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <Link
+                        to="/transportation-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service5.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/transportation-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service5.item1')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <Link
+                        to="/inspection-services"
+                        className="title-font font-bold underline hover:text-blue-300 text-xl"
+                        onClick={() => handleMegaMenu(null)}
+                      >
+                        {t('services-button.service6.title')}
+                      </Link>
+                      <ul className="content-font">
+                        <li className="py-1">
+                          <Link
+                            to="/inspection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service6.item1')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/inspection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service6.item2')}
+                          </Link>
+                        </li>
+                        <li className="py-1">
+                          <Link
+                            to="/inspection-services"
+                            className="hover:underline"
+                            onClick={() => handleMegaMenu(null)}
+                          >
+                            {t('services-button.service6.item3')}
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
+                  {/* Right side: Rectangular buttons */}
+                  <div className="container grid grid-cols-3 gap-5 w-fit h-fit">
                     <Link
-                      to="/anchorage-and-warehousing-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
                     >
-                      {t('services-button.service2')}
+                      <Truck className="w-15 h-15"/>
                     </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Neo đậu tàu thuyền
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Neo đậu chuyển tải xăng dầu
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Kho dầu hải quan
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
                     <Link
-                      to="/safety-and-environmental-protection-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
                     >
-                      {t('services-button.service3')}
+                      <Map className="w-15 h-15"/>
                     </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Kiểm soát và xử lý tràn dầu
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Thu gom rác thải
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Cho thuê phao chống va & phao chống tràn dầu
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
                     <Link
-                      to="/crew-support-and-logistics-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
                     >
-                      {t('services-button.service4')}
+                      <Ship className="w-15 h-15"/>
                     </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Dịch vụ đưa đón thuyền viên từ tàu đi bờ
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Dịch vụ khai báo thuyền viên đi bờ
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Dịch vụ trao đổi thuyền viên
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
                     <Link
-                      to="/transportation-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
                     >
-                      {t('services-button.service5')}
+                      <LifeBuoy className="w-15 h-15"/>
                     </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Cho thuê tàu vận tải
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
                     <Link
-                      to="/inspection-services"
-                      className="title-font font-bold underline hover:text-blue-300 text-xl"
-                      onClick={() => handleMegaMenu(null)}
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
                     >
-                      {t('services-button.service6')}
+                      <Container className="w-15 h-15"/>
                     </Link>
-                    <ul className="content-font">
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Giám định hàng nhập
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Giám định hàng xuất
-                        </Link>
-                      </li>
-                      <li className="py-1">
-                        <Link
-                          to=""
-                          className="hover:underline"
-                          onClick={() => handleMegaMenu(null)}
-                        >
-                          Giám định nhiên liệu tàu
-                        </Link>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
@@ -399,22 +484,23 @@ const Navbar = () => {
               onMouseEnter={() => handleMegaMenu("tech")}
               onMouseLeave={() => handleMegaMenu(null)}
             >
-              <Link to="" className="px-4 py-4 text-lg font-bold text-[#0a3a7d]">
+              <p className="px-4 py-4 text-lg font-bold text-[#0a3a7d] cursor-pointer">
                 {t('technical-information')}
-              </Link>
+              </p>
               {/* Mega menu */}
               <div
                 className={`absolute left-0 top-27 w-screen bg-gradient-to-b from-blue-900 to-blue-800 text-white px-5 py-5 z-50 transition duration-500 ${
                   activeMegaMenu === "tech" ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}
               >
-                <div className="container text-lg font-bold underline grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                <div className="container grid grid-cols-2 gap-8 mx-auto max-w-[1200px]">
+                  {/* Left side: Existing tech links */}
                   <div>
-                    <ul className="content-font">
+                    <ul className="content-font text-lg font-bold uppercase underline ml-20">
                       <li className="py-1">
                         <Link
                           to="/technical-information"
-                          className="hover:underline uppercase"
+                          className="hover:underline"
                           onClick={() => handleMegaMenu(null)}
                         >
                           {t('technical-infomation-button.item1')}
@@ -423,7 +509,7 @@ const Navbar = () => {
                       <li className="py-1">
                         <Link
                           to="/anchorage-area-1"
-                          className="hover:underline uppercase"
+                          className="hover:underline"
                           onClick={() => handleMegaMenu(null)}
                         >
                           {t('technical-infomation-button.item2')}
@@ -432,7 +518,7 @@ const Navbar = () => {
                       <li className="py-1">
                         <Link
                           to="/anchorage-area-2"
-                          className="hover:underline uppercase"
+                          className="hover:underline"
                           onClick={() => handleMegaMenu(null)}
                         >
                           {t('technical-infomation-button.item3')}
@@ -441,13 +527,46 @@ const Navbar = () => {
                       <li className="py-1">
                         <Link
                           to="/area-map"
-                          className="hover:underline uppercase"
+                          className="hover:underline"
                           onClick={() => handleMegaMenu(null)}
                         >
                           {t('technical-infomation-button.item4')}
                         </Link>
                       </li>
                     </ul>
+                  </div>
+                  {/* Right side: Rectangular buttons */}
+                  <div className="container grid grid-cols-3 gap-5 w-fit h-fit">
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Truck className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Map className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Ship className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <LifeBuoy className="w-15 h-15"/>
+                    </Link>
+                    <Link
+                      to=""
+                      className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 flex items-center justify-center text-center w-40 h-40"
+                    >
+                      <Container className="w-15 h-15"/>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -469,7 +588,7 @@ const Navbar = () => {
 
         {/* Thanh tìm kiếm - chỉ hiển thị trên desktop */}
         <div className="hidden lg:flex border border-gray-300 items-center">
-          <input type="text" id="search" name="search" placeholder="Tìm kiếm..." className="p-2" />
+          <input type="text" id="search" name="search" placeholder={t('search-placeholder')} className="p-2" />
           <button className="bg-[#16b8f8] px-4 py-3 text-white">
             <Search className="h-5 w-5" />
           </button>
@@ -526,18 +645,18 @@ const Navbar = () => {
                   {activeMobileSubmenu === "intro" && (
                     <ul className="pl-4 py-2 mt-2">
                       <li className="py-2">
-                        <Link to="/about-us" className="block text-white" onClick={() => setShowNav(false)}>
-                          VỀ CHÚNG TÔI
+                        <Link to="/about-us" className="block text-white uppercase" onClick={() => setShowNav(false)}>
+                          {t('about-button.about-us')}
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link to="/open-letter" className="block text-white" onClick={() => setShowNav(false)}>
-                          THƯ NGỎ
+                        <Link to="/open-letter" className="block text-white uppercase" onClick={() => setShowNav(false)}>
+                          {t('about-button.open-letter')}
                         </Link>
                       </li>
                       <li className="py-2">
-                        <Link to="" className="block text-white" onClick={() => setShowNav(false)}>
-                          LỢI THẾ NỔI BẬT
+                        <Link to="" className="block text-white uppercase" onClick={() => setShowNav(false)}>
+                          {t('about-button.highlight-advantages')}
                         </Link>
                       </li>
                     </ul>
@@ -564,17 +683,17 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ xếp dỡ hàng hóa và chuyển tải hàng hóa
+                          {t('services-button.service1.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Chuyển tải xăng dầu
+                              {t('services-button.service1.item1')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Cẩu hàng hóa trên biển
+                              {t('services-button.service1.item2')}
                             </Link>
                           </li>
                         </ul>
@@ -586,22 +705,22 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ neo đậu và kho bãi
+                          {t('services-button.service2.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Neo đậu tàu thuyền
+                              {t('services-button.service2.item1')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Neo đậu chuyển tải xăng dầu
+                              {t('services-button.service2.item2')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Kho dầu hải quan
+                              {t('services-button.service2.item3')}
                             </Link>
                           </li>
                         </ul>
@@ -613,22 +732,22 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ an toàn và bảo vệ môi trường
+                          {t('services-button.service3.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Kiểm soát và xử lý tràn dầu
+                              {t('services-button.service3.item1')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Thu gom rác thải
+                              {t('services-button.service3.item2')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Cho thuê phao chống va & phao chống tràn dầu
+                              {t('services-button.service3.item3')}
                             </Link>
                           </li>
                         </ul>
@@ -640,22 +759,22 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ Hỗ trợ Thuyền viên và Logistics
+                          {t('services-button.service4.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Dịch vụ đưa đón thuyền viên từ tàu đi bờ
+                              {t('services-button.service4.item1')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Dịch vụ khai báo thuyền viên đi bờ
+                              {t('services-button.service4.item2')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Dịch vụ trao đổi thuyền viên
+                              {t('services-button.service4.item3')}
                             </Link>
                           </li>
                         </ul>
@@ -667,12 +786,12 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ Vận tải
+                          {t('services-button.service5.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Cho thuê tàu vận tải
+                              {t('services-button.service5.item1')}
                             </Link>
                           </li>
                         </ul>
@@ -684,22 +803,22 @@ const Navbar = () => {
                           className="block font-bold text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          Dịch vụ giám định
+                          {t('services-button.service6.title')}
                         </Link>
                         <ul className="pl-4 py-1">
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Giám định hàng nhập
+                              {t('services-button.service6.item1')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Giám định hàng xuất
+                              {t('services-button.service6.item2')}
                             </Link>
                           </li>
                           <li>
                             <Link to="" className="block py-1 text-white" onClick={() => setShowNav(false)}>
-                              Giám định nhiên liệu tàu
+                              {t('services-button.service6.item3')}
                             </Link>
                           </li>
                         </ul>
@@ -728,7 +847,7 @@ const Navbar = () => {
                           className="block text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          THÔNG TIN KĨ THUẬT
+                          {t('technical-infomation-button.item1')}
                         </Link>
                       </li>
                       <li className="py-2">
@@ -737,7 +856,7 @@ const Navbar = () => {
                           className="block text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          KHU VỰC NEO ĐẬU SỐ 1
+                          {t('technical-infomation-button.item2')}
                         </Link>
                       </li>
                       <li className="py-2">
@@ -746,12 +865,12 @@ const Navbar = () => {
                           className="block text-white"
                           onClick={() => setShowNav(false)}
                         >
-                          KHU VỰC NEO ĐẬU SỐ 2
+                          {t('technical-infomation-button.item3')}
                         </Link>
                       </li>
                       <li className="py-2">
                         <Link to="/area-map" className="block text-white" onClick={() => setShowNav(false)}>
-                          BẢN ĐỒ KHU VỰC
+                          {t('technical-infomation-button.item4')}
                         </Link>
                       </li>
                     </ul>

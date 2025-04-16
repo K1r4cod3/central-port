@@ -1,0 +1,47 @@
+{
+    "title": "Khu vực neo đậu số 1",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Khu vực neo đậu số 1 tại Cảng Nước Sâu Miền Trung là một khu vực được thiết kế chiến lược để đảm bảo việc neo đậu an toàn và hiệu quả cho các tàu. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, khu vực này nằm trong khuôn viên cảng rộng 55 km² của chúng tôi, có khả năng tiếp nhận tàu lên đến 200.000 DWT. Với độ sâu tối ưu và bố trí rộng rãi, Khu vực neo đậu số 1 là lựa chọn lý tưởng cho các tàu từ 60.000 DWT đến 80.000 DWT, cung cấp không gian an toàn và đáng tin cậy cho các hoạt động hàng hải của bạn."
+    },
+    "anchoring-areas": {
+        "title": "Thông số kỹ thuật",
+        "item1": {
+            "content1": "Diện tích: 2.4 km²",
+            "content2": "Độ sâu: 13.6 m đến 15.8 m",
+            "content3": "Phù hợp cho: Tàu từ 60.000 DWT đến 80.000 DWT (mớn nước tối đa: 14.5 m)",
+            "content4": "Liên lạc VHF: CH16 cho kiểm soát cảng, CH09 cho hoa tiêu"
+        },
+        "item2": {
+            "content1": "Tọa độ"
+        }
+    },
+    "map": {
+        "title": "Bản đồ khu vực neo đậu",
+        "content": "Bản đồ dưới đây cung cấp cái nhìn chi tiết về Khu vực neo đậu số 1, bao gồm tọa độ và phạm vi độ sâu, để hỗ trợ việc điều hướng và lập kế hoạch. Khu vực này được thiết kế để tiếp nhận tàu một cách an toàn, đảm bảo hoạt động suôn sẻ cho việc neo đậu, chuyển tải hoặc thời gian chờ đợi."
+    },
+    "key-benefits": {
+        "title": "Lợi ích chính",
+        "item1": {
+            "title": "An toàn và rộng rãi: ",
+            "content": "Với diện tích 2.4 km² và độ sâu từ 13.6 m đến 15.8 m, khu vực này đảm bảo neo đậu an toàn cho tàu lên đến 80.000 DWT."
+        },
+        "item2": {
+            "title": "Hoạt động hiệu quả: ",
+            "content": "Liên lạc VHF 24/7 (CH16 và CH09) cho phép phối hợp liền mạch với kiểm soát cảng và hoa tiêu, giảm thiểu chậm trễ."
+        },
+        "item3": {
+            "title": "Vị trí chiến lược: ",
+            "content": "Nằm trong Cảng Nước Sâu Miền Trung, khu vực này cung cấp khả năng tiếp cận dễ dàng đến các dịch vụ xếp dỡ hàng hóa và logistics, nâng cao hiệu quả vận hành."
+        },
+        "item4": {
+            "title": "Tuân thủ an toàn: ",
+            "content": "Chúng tôi tuân thủ nghiêm ngặt các tiêu chuẩn an toàn và môi trường, với dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để bảo vệ tàu của bạn và môi trường."
+        }
+    },
+    "contact-banner": {
+        "title": "Bạn đã sẵn sàng sử dụng Khu vực neo đậu số 1 cho tàu của mình?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để biết thêm chi tiết hoặc đặt lịch hoạt động tại Cảng Nước Sâu Miền Trung!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

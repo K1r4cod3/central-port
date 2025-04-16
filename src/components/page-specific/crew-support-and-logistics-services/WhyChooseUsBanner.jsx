@@ -1,13 +1,14 @@
 import React from 'react'
 import './WhyChooseUsBanner.css'
 import { Clock, MapPin, Users, ScrollText } from "lucide-react"
-
+import { useTranslation } from 'react-i18next'
 const WhyChooseUsBanner = () => {
+  const { t } = useTranslation('crew-support-and-logistics-services')
   return (
     <div className='py-16'>
       <div className='container mx-auto px-4 md:px-6'>
           <h2 className='text-2xl md:text-3xl font-bold mb-12 text-center text-blue-400 title-font'>
-            Tại Sao Lại Chọn Chúng Tôi?
+            {t('why-choose-us.title')}
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -18,9 +19,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Hỗ trợ liên tục 24/7</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item1-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Đội ngũ của chúng tôi luôn sẵn sàng 24/7 để hỗ trợ vận chuyển, khai báo và trao đổi thuyền viên, đảm bảo hoạt động của bạn không bị gián đoạn.
+                {t('why-choose-us.item1-content')}
                 </p>
               </div>
             </div>
@@ -32,9 +33,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Chuyên môn về quy định</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item2-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Chúng tôi có kiến thức sâu rộng về các quy định hàng hải địa phương và quốc tế, đảm bảo tuân thủ đầy đủ và quy trình không rườm rà.
+                {t('why-choose-us.item2-content')}
                 </p>
               </div>
             </div>
@@ -46,9 +47,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Đội ngũ tận tâm và giàu kinh nghiệm</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item3-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Nhân viên của chúng tôi được đào tạo để cung cấp sự hỗ trợ xuất sắc, xử lý mọi khía cạnh của logistics thuyền viên với sự cẩn trọng và chuyên nghiệp.
+                {t('why-choose-us.item3-content')}
                 </p>
               </div>
             </div>
@@ -60,9 +61,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Vị trí chiến lược</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item4-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Nằm ở miền Trung Việt Nam, chúng tôi cung cấp khả năng tiếp cận dễ dàng đến các cơ sở thuyền viên và trung tâm logistics, khiến chúng tôi trở thành đối tác lý tưởng cho nhu cầu hàng hải của bạn.
+                {t('why-choose-us.item4-content')}
                 </p>
               </div>
             </div>

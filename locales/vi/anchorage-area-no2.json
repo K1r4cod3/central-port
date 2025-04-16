@@ -1,0 +1,47 @@
+{
+    "title": "Khu vực neo đậu số 2",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Khu vực neo đậu số 2 tại Cảng Nước Sâu Miền Trung là một khu vực quan trọng được thiết kế để tiếp nhận các tàu lớn hơn với sự an toàn và hiệu quả. Nằm tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, khu vực này thuộc khuôn viên cảng rộng 55 km² của chúng tôi, có khả năng tiếp nhận tàu lên đến 200.000 DWT. Với vùng nước sâu hơn và bố trí rộng rãi, Khu vực neo đậu số 2 là lựa chọn lý tưởng cho các tàu trên 80.000 DWT, cung cấp không gian an toàn và đáng tin cậy cho việc neo đậu, chuyển tải và các hoạt động hàng hải khác."
+    },
+    "anchoring-areas": {
+        "title": "Thông số kỹ thuật",
+        "item1": {
+            "content1": "Diện tích: 2.9 km²",
+            "content2": "Độ sâu: 17.0 m đến 20.8 m",
+            "content3": "Phù hợp cho: Tàu trên 80.000 DWT (mớn nước tối đa: 18.5 m)",
+            "content4": "Liên lạc VHF: CH16 cho kiểm soát cảng, CH09 cho hoa tiêu"
+        },
+        "item2": {
+            "content1": "Tọa độ"
+        }
+    },
+    "map": {
+        "title": "Bản đồ khu vực neo đậu",
+        "content": "Bản đồ dưới đây cung cấp cái nhìn chi tiết về Khu vực neo đậu số 2, bao gồm tọa độ và phạm vi độ sâu, để hỗ trợ việc điều hướng và lập kế hoạch. Khu vực này được tối ưu hóa cho các tàu lớn hơn, đảm bảo neo đậu an toàn và hoạt động hiệu quả cho việc chuyển tải, xử lý dầu hoặc thời gian chờ đợi."
+    },
+    "key-benefits": {
+        "title": "Lợi ích chính",
+        "item1": {
+            "title": "hiết kế cho tàu lớn: ",
+            "content": "Với diện tích 2.9 km² và độ sâu từ 17.0 m đến 20.8 m, khu vực này hoàn hảo cho tàu trên 80.000 DWT, đảm bảo neo đậu an toàn và chắc chắn."
+        },
+        "item2": {
+            "title": "Hoạt động hiệu quả: ",
+            "content": "Liên lạc VHF 24/7 (CH16 và CH09) cho phép phối hợp liền mạch với kiểm soát cảng và hoa tiêu, giảm chậm trễ và nâng cao hiệu quả."
+        },
+        "item3": {
+            "title": "Lý tưởng cho chuyển tải dầu: ",
+            "content": "Vùng nước sâu hơn khiến khu vực này phù hợp cho tàu chở dầu, với các giao thức an toàn nghiêm ngặt để hỗ trợ hoạt động chuyển tải hiệu quả và an toàn."
+        },
+        "item4": {
+            "title": "Tuân thủ an toàn và môi trường: ",
+            "content": "Chúng tôi tuân thủ các tiêu chuẩn quốc tế, cung cấp dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để bảo vệ tàu của bạn và môi trường."
+        }
+    },
+    "contact-banner": {
+        "title": "Bạn đã sẵn sàng sử dụng Khu vực neo đậu số 2 cho tàu của mình?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để biết thêm chi tiết hoặc đặt lịch hoạt động tại Cảng Nước Sâu Miền Trung!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

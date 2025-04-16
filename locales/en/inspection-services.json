@@ -1,0 +1,54 @@
+{
+    "title": "Inspection Services",
+    "contact-button": "Contact Us",
+    "introduction": {
+        "title": "Introduction",
+        "content": "At Central Deepwater Port, we provide professional supervisory services to ensure quality, safety, and compliance for your cargo and materials. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, our port is equipped to oversee crew operations and resource management to deliver accurate and reliable solutions. Whether you are importing or exporting goods, handling heavy cargo, or managing critical materials, our supervisory services are designed to minimize risks, ensure accurate reporting, and support your operations with precision. Trust us to safeguard the quality and safety of your cargo and materials at every step."
+    },
+    "services": {
+        "title": "Our Services",
+
+        "item1-title": "Incoming Logistics",
+        "item1-content": "Our organization provides incoming logistics services to ensure the quality, quantity, and safety of goods before they are stored. This is a reliable source for us to guarantee that all goods meet the necessary standards and comply with market demands, facilitating seamless distribution and delivery.",
+
+        "item2-title": "Outgoing Logistics",
+        "item2-content": "We offer outgoing logistics services to ensure that goods are delivered safely, on time, and in accordance with market standards. Our organization is committed to delivering goods with the highest quality, quantity, and efficiency, minimizing risks and ensuring smooth operations to meet the needs of the entire market.",
+
+        "item3-title": "Data Monitoring - Bunker Survey",
+        "item3-content": "We provide data monitoring services for logistics, offering detailed insights into program performance and operational status to ensure optimal quality and quantity across all activities. Our data monitoring services help you gain a comprehensive understanding of operations, enabling informed decision-making and ensuring compliance with market requirements."
+    },
+    "why-choose-us": {
+        "title": "Why Choose Us?",
+
+        "item1-title": "Logistics Delivery",
+        "item1-content": "Our organization collaborates with experienced logistics personnel to ensure official verification and reliability, guaranteeing the highest standards of quality and safety for all goods.",
+
+        "item2-title": "Global Circulation",
+        "item2-content": "We comply with international standards and regulations for logistics, providing comprehensive monitoring services to meet global market demands.",
+
+        "item3-title": "Transparency and Accuracy",
+        "item3-content": "Our detailed inspection reports give you full visibility into the quality and quantity of your goods and fuel, reducing risks and ensuring trust.",
+
+        "item4-title": "24/7 Support",
+        "item4-content": "We provide round-the-clock inspection services to fit your schedule, ensuring your operations run smoothly without delays.",
+
+        "item5-title": "Strategic Location",
+        "item5-content": "Positioned in Central Vietnam, we offer easy access for inspections, making us a convenient partner for your maritime needs."
+    },
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1-title": "Logistics Procedures",
+        "item1-content": "View the source of our organization’s logistics monitoring expertise, ensuring precision in both incoming and outgoing goods.",
+
+        "item2-title": "Data Monitoring",
+        "item2-content": "Explore how our organization monitors fuel data to ensure quality and compliance with official standards.",
+
+        "item3-title": "Infrastructure Capability",
+        "item3-content": "Discover the diverse tools and infrastructure our organization utilizes to provide logistics services tailored to various customer needs."
+    },
+    "contact": {
+        "title": "Ensure the Quality and Compliance of Goods with Our Logistics and Monitoring Services.",
+        "content": "Contact us today to learn more about our services or to receive support for your operations!",
+        "button": "Contact Us"
+    }
+}

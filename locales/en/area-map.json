@@ -1,0 +1,84 @@
+{
+    "title": "Area Map",
+    "introduction": {
+        "title": "Introduction",
+        "content": "Anchorage Area No. 2 at Central Deepwater Port is a critical zone designed to accommodate larger vessels while ensuring safety and operational efficiency. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, this area spans 55 km² and can handle vessels up to 200,000 DWT. With deeper waters and wider berths, Anchorage Area No. 2 is ideal for vessels over 80,000 DWT, providing secure anchoring, reliable support for maritime operations, transshipment, and cargo handling."
+    },
+    "support-map": {
+        "title": "Support Map",
+        "desc": "The detailed map below provides an overview of Central Deepwater Port’s layout, highlighting key areas for your operations:",
+        "anchorage-areas": {
+            "title": "Anchorage Areas",
+            "anchorage-area-no1": {
+                "title": "Anchorage Area No. 1: ",
+                "content": "2.4 km², depth 13.6 m to 15.8 m, suitable for vessels from 60,000 DWT to 80,000 DWT (maximum draft: 14.5 m)."
+            },
+            "anchorage-area-no2": {
+                "title": "Anchorage Area No. 2: ",
+                "content": "2.9 km², depth 17.0 m to 20.8 m, suitable for vessels over 80,000 DWT (maximum draft: 18.5 m)."
+            }
+        },
+        "other-key-area": {
+            "title": "Other Key Areas",
+            "item1": {
+                "title": "Cargo Handling Area: ",
+                "content": "Equipped with modern facilities and cranes capable of handling up to 30,000 tons/day, ensuring efficient loading, unloading, and transshipment of various cargo types, including international standards."
+            },
+            "item2": {
+                "title": "Foreign Trade Area: ",
+                "content": "A dedicated zone for storing goods, managing customs procedures, and handling international trade operations."
+            },
+            "item3": {
+                "title": "Crew and Logistics Support Area: ",
+                "content": "Facilities supporting vessel chartering, crew safety, exchanges, and transshipment operations."
+            },
+            "item4": {
+                "title": "Inspection and Safety Area: ",
+                "content": "Areas designated for quality inspections, safety operations, and environmental compliance to ensure smooth and secure operations."
+            }
+        }
+    },
+    "strat-location": {
+        "title": "Strategic Location and Connectivity",
+        "content": "Central Deepwater Port’s location in Central Vietnam offers unparalleled connectivity to international maritime routes. The regional map below highlights our position in Nghi Son, Thanh Hoa Province, and illustrates the major shipping lanes connecting us to key markets in Southeast Asia (e.g., Singapore, Malaysia), East Asia (e.g., China, Japan), and beyond. This strategic positioning ensures reduced transit times and enhanced supply chain efficiency for our clients."
+    },
+    "key-feature": {
+        "title": "Key Features of Our Port",
+        "item1": {
+            "title": "Total Area: ",
+            "content": "55 km², providing ample space for diverse maritime operations."
+        },
+        "item2": {
+            "title": "Vessel Accommodation Capacity: ",
+            "content": "Up to 200,000 DWT, catering to vessels of various sizes."
+        },
+        "item3": {
+            "title": "24/7 Operations: ",
+            "content": "24/7 support for navigation, anchoring, and cargo handling."
+        },
+        "item4": {
+            "title": "Safety and Efficiency: ",
+            "content": "Equipped with 24/7 spill prevention, quality assurance, and environmental safety measures."
+        }
+    },
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1": {
+            "title": "Aerial view of the port",
+            "content": "A panoramic view from above showcasing the entire layout of the Central Deepwater Port."
+        },
+        "item2": {
+            "title": "Anchorage area in operation",
+            "content": "Images of ships docked at Berthing Area No.1 and No.2."
+        },
+        "item3": {
+            "title": "Global connectivity map",
+            "content": "An illustration of our connections to international maritime routes."
+        }
+    },
+    "contact-banner": {
+        "title": "Navigate Central Deepwater Port with Confidence",
+        "content": "Contact us today to learn more about our operations and how we can support your maritime needs!",
+        "button": "Contact Us"
+    }
+}

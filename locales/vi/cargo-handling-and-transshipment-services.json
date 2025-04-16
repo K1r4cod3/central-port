@@ -1,0 +1,47 @@
+{
+    "title": "Dịch Vụ Xếp Dỡ và Chuyển Tải Hàng Hóa",
+    "contact-button": "Liên Hệ Ngay",
+
+    "introduction": {
+        "title": "Giới Thiệu",
+        "content": "Tại Cảng Nước Sâu Miền Trung, chúng tôi tự hào cung cấp dịch vụ xếp dỡ và chuyển tải hàng hóa hiệu quả, đáng tin cậy, đáp ứng nhu cầu đa dạng của khách hàng. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi được trang bị cơ sở hạ tầng hiện đại và thiết bị tiên tiến để xử lý nhiều loại hàng hóa, đảm bảo hoạt động thông suốt cho các tàu lên đến 200.000 DWT."
+    },
+
+    "capabilities": {
+        "title": "Năng Lực Của Chúng Tôi",
+        "item1-title": "Năng lực xếp dỡ",
+        "item1-content": "Chúng tôi có khả năng xử lý 30.000 tấn/ngày, đảm bảo quy trình nhanh chóng và hiệu quả.",
+        "item2-title": "Loại Hàng Hóa",
+        "item2-content": "Cảng chuyên xử lý than, quặng, clinker, đá, cát xây dựng và các loại hàng rời khác.",
+        "item3-title": "Chuyển Tải Dầu",
+        "item3-content": "Chúng tôi cung cấp dịch vụ chuyển tải dầu an toàn, tuân thủ tiêu chuẩn quốc tế với kiểm soát chất lượng nghiêm ngặt.",
+        "item4-title": "Xếp dỡ ngoài khơi",
+        "item4-content": "Sử dụng công nghệ tiên tiến, chúng tôi cung cấp giải pháp xếp dỡ ngoài khơi linh hoạt và hiệu quả cho nhiều ngành công nghiệp."
+    },
+
+    "why-choose-us": {
+        "title": "Tại Sao Lại Chọn Chúng Tôi?",
+        "item1-title": "Thiết bị hiện đại",
+        "item1-content": "Cần cẩu, hệ thống băng chuyền và máy móc xử lý tiên tiến giúp tiết kiệm thời gian và chi phí cho khách hàng.",
+        "item2-title": "Đội ngũ giàu kinh nghiệm",
+        "item2-content": "Lực lượng lao động lành nghề được đào tạo để xử lý hàng hóa chính xác, đảm bảo an toàn và tuân thủ tiêu chuẩn quốc tế.",
+        "item3-title": "Hoạt động 24/7",
+        "item3-content": "Chúng tôi hoạt động liên tục để đáp ứng lịch trình của bạn, giảm thiểu thời gian chờ và tối ưu hóa năng suất.",
+        "item4-title": "Vị trí chiến lược",
+        "item4-content": "Nằm ở miền Trung Việt Nam, chúng tôi là cửa ngõ quan trọng cho các tuyến hàng hải quốc tế, kết nối bạn với thị trường toàn cầu."
+    },
+
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1-title": "Xếp dỡ hàng hóa",
+        "item1-content": "Xem đội ngũ của chúng tôi xử lý hàng rời với sự chính xác và cẩn thận.",
+        "item2-title": "Quy trình chuyển tải dầu",
+        "item2-content": "Tìm hiểu cách chúng tôi đảm bảo an toàn và tuân thủ trong các hoạt động chuyển tải dầu."
+    },
+
+    "contact": {
+        "title": "Bạn đã sẵn sàng vận chuyển hàng hóa một cách dễ dàng và hiệu quả?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để tìm hiểu thêm về dịch vụ vận tải của chúng tôi và cách chúng tôi có thể hỗ trợ nhu cầu logistics của bạn!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

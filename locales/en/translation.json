@@ -1,0 +1,60 @@
+{
+
+  "home": "Home",
+  "about": "About",
+  "services": "Services",
+  "technical-information": "Technical Information",
+  "news": "News",
+  "contact": "Contact",
+  "language": "Language",
+  "search-placeholder": "Search",
+
+  "about-button": {
+    "about-us": "About Us",
+    "open-letter": "Open Letter",
+    "highlight-advantages": "Highlight Advantages"
+  },
+
+  "services-button": {
+    "service1": {
+      "title": "Cargo Handling and Transshipment Services",
+      "item1": "Oil Transshipment",
+      "item2": "Offshore Cargo Lifting"
+    },
+    "service2": {
+      "title": "Anchorage and Warehousing Services",
+      "item1": "Vessel Anchorage",
+      "item2": "Oil Transshipment Anchorage",
+      "item3": "Bonded Oil Storage"
+    },
+    "service3": {
+      "title": "Safety and Environmental Protection Services",
+      "item1": "Oil Spill Monitoring and Response",
+      "item2": "Waste Collection",
+      "item3": "Rental of Anti-Collision and Oil Spill Containment Booms"
+    },
+    "service4": {
+      "title": "Crew Support and Logistics Services",
+      "item1": "Crew Transportation",
+      "item2": "Crew Shore Leave Declaration Services",
+      "item3": "Crew Change Services"
+    },
+    "service5": {
+      "title": "Transportation Services",
+      "item1": "Vessel Rental"
+    },
+    "service6": {
+      "title": "Inspection Services",
+      "item1": "Inspection of Imported Goods",
+      "item2": "Inspection of Exported Goods",
+      "item3": "Bunker Survey"
+    }
+  },
+
+  "technical-infomation-button": {
+    "item1": "TECHNICAL SPECIFICATIONS",
+    "item2": "Anchorage Area No. 1",
+    "item3": "Anchorage Area No. 2",
+    "item4": "Anchorage Area Map"
+  }
+} 

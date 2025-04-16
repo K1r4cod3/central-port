@@ -1,0 +1,47 @@
+{
+    "title": "Anchorage Area No. 2",
+    "introduction": {
+        "title": "Introduction",
+        "content": "Anchorage Area No. 2 at Central Deepwater Port is a critical zone designed to accommodate larger vessels while ensuring safety and operational efficiency. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, this area spans 55 km² and can handle vessels up to 200,000 DWT. With deeper waters and wider berths, Anchorage Area No. 2 is ideal for vessels over 80,000 DWT, providing secure anchoring, reliable support for maritime operations, transshipment, and cargo handling."
+    },
+    "anchoring-areas": {
+        "title": "Anchoring Areas",
+        "item1": {
+            "content1": "Area: 2.9 km²",
+            "content2": "Depth: 17.0 m to 20.8 m",
+            "content3": "Suitable for: Vessels over 80,000 DWT (maximum draft: 18.5 m)",
+            "content4": "VHF Contact: CH16 for inspections, CH09 for operations"
+        },
+        "item2": {
+            "title": "Coordinates:"
+        }
+    },
+    "map": {
+        "title": "Anchorage Area Map",
+        "content": "The map provided details the layout of Anchorage Area No. 2, including coordinates, depth ranges, and operational guidelines to support navigation and planning. This area is designed for larger vessels, ensuring safe anchoring, efficient operations, transshipment, or storage solutions for your maritime needs."
+    },
+    "key-benefits": {
+        "title": "Key Benefits",
+        "item1": {
+            "title": "Designed for Larger Vessels: ",
+            "content": "With an area of 2.9 km² and depths ranging from 17.0 m to 20.8 m, this area is perfect for vessels over 80,000 DWT, ensuring safe and secure anchoring."
+        },
+        "item2": {
+            "title": "Operational Efficiency: ",
+            "content": "24/7 VHF contact (CH16 and CH09) enables seamless coordination for inspections, operations, and reduced downtime, with high operational efficiency."
+        },
+        "item3": {
+            "title": "Support for Transshipment: ",
+            "content": "Located in the deeper waters of Central Deepwater Port, this area is ideal for transshipment, offering safe and efficient cargo handling, vessel operations, and storage solutions."
+        },
+        "item4": {
+            "title": "Environmental Safety Compliance: ",
+            "content": "We strictly adhere to environmental standards, ensuring all operations are safe, sustainable, and compliant with regulations, with 24/7 quality assurance support for vessels and the environment."
+        }
+    },
+    "contact-banner": {
+        "title": "Ready to Utilize Anchorage Area No. 2 for Your Vessel?",
+        "content": "Contact us today to learn more about the features and benefits of operating at Central Deepwater Port!",
+        "button": "Contact Us"
+    }
+}

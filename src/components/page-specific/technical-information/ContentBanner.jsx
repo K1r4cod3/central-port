@@ -1,15 +1,16 @@
 import React from 'react'
 import worldMap from '../../../assets/map.jpg'
-
+import { useTranslation } from 'react-i18next'
 const ContentBanner = () => {
+  const { t } = useTranslation('technical-information')
   return (
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4 max-w-[1200px]">
         {/* Introduction Section */}
         <section className="mb-16">
-          <h1 className="text-3xl font-bold text-blue-900 mb-6 title-font">Giới thiệu</h1>
+          <h1 className="text-3xl font-bold text-blue-900 mb-6 title-font">{t('introduction.title')}</h1>
           <p className="text-gray-700 leading-relaxed content-font">
-            Cảng Nước Sâu Miền Trung được thiết kế để đáp ứng các tiêu chuẩn quốc tế cao nhất, cung cấp các khả năng kỹ thuật tiên tiến để hỗ trợ nhiều hoạt động hàng hải. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi có diện tích 55 km² và được trang bị để tiếp nhận tàu lên đến 200.000 DWT. Dưới đây là thông số kỹ thuật chi tiết về các khu vực neo đậu và bản đồ để giúp bạn điều hướng cơ sở của chúng tôi một cách dễ dàng.
+            {t('introduction.content')}
           </p>
         </section>
 
@@ -18,19 +19,19 @@ const ContentBanner = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Area 1 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">Khu vực neo đậu số 1</h2>
+              <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">{t('anchoring-areas.area1.title')}</h2>
               <ul className="space-y-3 content-font text-gray-700">
-                <li><span className="font-semibold">Diện tích:</span> 2.4 km²</li>
-                <li><span className="font-semibold">Độ sâu:</span> 13.6 m đến 15.8 m</li>
-                <li><span className="font-semibold">Phù hợp cho:</span> Tàu từ 60.000 DWT đến 80.000 DWT (mớn nước tối đa: 14.5 m)</li>
-                <li><span className="font-semibold">Liên lạc VHF:</span> CH16 cho kiểm soát cảng, CH09 cho hoa tiêu</li>
+                <li><span className="font-semibold">{t('anchoring-areas.area1.area')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area1.depth')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area1.suitable')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area1.vhf')}</span></li>
                 <li className="space-y-2">
-                  <span className="font-semibold block">Tọa độ:</span>
+                  <span className="font-semibold block">{t('anchoring-areas.area1.coordinates.title')}</span>
                   <ul className="pl-4 space-y-1">
-                    <li>DVNS 1: 19°18'30"N - 105°47'30"E</li>
-                    <li>DVNS 2: 19°18'30"N - 105°48'30"E</li>
-                    <li>DVNS 3: 19°17'30"N - 105°48'30"E</li>
-                    <li>DVNS 4: 19°17'30"N - 105°47'30"E</li>
+                    <li>{t('anchoring-areas.area1.coordinates.point1')}</li>
+                    <li>{t('anchoring-areas.area1.coordinates.point2')}</li>
+                    <li>{t('anchoring-areas.area1.coordinates.point3')}</li>
+                    <li>{t('anchoring-areas.area1.coordinates.point4')}</li>
                   </ul>
                 </li>
               </ul>
@@ -38,19 +39,19 @@ const ContentBanner = () => {
 
             {/* Area 2 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">Khu vực neo đậu số 2</h2>
+              <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">{t('anchoring-areas.area2.title')}</h2>
               <ul className="space-y-3 content-font text-gray-700">
-                <li><span className="font-semibold">Diện tích:</span> 2.9 km²</li>
-                <li><span className="font-semibold">Độ sâu:</span> 17.0 m đến 20.8 m</li>
-                <li><span className="font-semibold">Phù hợp cho:</span> Tàu trên 80.000 DWT (mớn nước tối đa: 18.5 m)</li>
-                <li><span className="font-semibold">Liên lạc VHF:</span> CH16 cho kiểm soát cảng, CH09 cho hoa tiêu</li>
+                <li><span className="font-semibold">{t('anchoring-areas.area2.area')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area2.depth')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area2.suitable')}</span></li>
+                <li><span className="font-semibold">{t('anchoring-areas.area2.vhf')}</span></li>
                 <li className="space-y-2">
-                  <span className="font-semibold block">Tọa độ:</span>
+                  <span className="font-semibold block">{t('anchoring-areas.area2.coordinates.title')}</span>
                   <ul className="pl-4 space-y-1">
-                    <li>DVNS 5: 19°17'30"N - 105°48'30"E</li>
-                    <li>DVNS 6: 19°17'30"N - 105°49'30"E</li>
-                    <li>DVNS 7: 19°16'30"N - 105°49'30"E</li>
-                    <li>DVNS 8: 19°16'30"N - 105°48'30"E</li>
+                    <li>{t('anchoring-areas.area2.coordinates.point1')}</li>
+                    <li>{t('anchoring-areas.area2.coordinates.point2')}</li>
+                    <li>{t('anchoring-areas.area2.coordinates.point3')}</li>
+                    <li>{t('anchoring-areas.area2.coordinates.point4')}</li>
                   </ul>
                 </li>
               </ul>
@@ -60,9 +61,9 @@ const ContentBanner = () => {
 
         {/* Map Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">Bản đồ khu vực neo đậu</h2>
+          <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">{t('map.title')}</h2>
           <p className="text-gray-700 mb-6 content-font">
-            Các khu vực neo đậu của chúng tôi được thiết kế chiến lược để đảm bảo hoạt động an toàn và hiệu quả cho tất cả các tàu. Bản đồ dưới đây cung cấp cái nhìn tổng quan rõ ràng về Khu vực neo đậu số 1 và số 2, bao gồm tọa độ và phạm vi độ sâu, để hỗ trợ việc điều hướng và lập kế hoạch.
+            {t('map.description')}
           </p>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <img src={worldMap} alt="Bản đồ khu vực neo đậu" className="w-full h-auto" />
@@ -71,12 +72,12 @@ const ContentBanner = () => {
 
         {/* Additional Technical Information */}
         <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">Thông tin kỹ thuật bổ sung</h2>
+          <h2 className="text-2xl font-bold text-blue-900 mb-4 title-font">{t('additional-info.title')}</h2>
           <ul className="space-y-3 content-font text-gray-700 list-disc pl-5">
-            <li>Năng lực xếp dỡ: 30.000 tấn/ngày</li>
-            <li>Diện tích cảng: 55 km²</li>
-            <li>Năng lực tiếp nhận tàu: Lên đến 200.000 DWT</li>
-            <li>Tính năng an toàn: Dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để đảm bảo tuân thủ môi trường.</li>
+            <li>{t('additional-info.items.item1')}</li>
+            <li>{t('additional-info.items.item2')}</li>
+            <li>{t('additional-info.items.item3')}</li>
+            <li>{t('additional-info.items.item4')}</li>
           </ul>
         </section>
       </div>

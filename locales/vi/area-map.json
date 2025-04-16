@@ -1,0 +1,84 @@
+{
+    "title": "Bản đồ khu vực",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Cảng Nước Sâu Miền Trung, tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, là trung tâm hàng hải hàng đầu tại miền Trung Việt Nam, với diện tích 55 km² và khả năng tiếp nhận tàu lên đến 200.000 DWT. Trang Bản Đồ Khu Vực của chúng tôi cung cấp cái nhìn tổng quan toàn diện về bố trí của cảng, làm nổi bật các khu vực vận hành chính như khu neo đậu, khu vực xếp dỡ hàng hóa, kho dầu ngoại quan và khu vực hỗ trợ thuyền viên. Bản đồ này được thiết kế để giúp bạn điều hướng cơ sở của chúng tôi, lập kế hoạch hoạt động và hiểu rõ lợi thế chiến lược của vị trí cảng."
+    },
+    "support-map": {
+        "title": "Bản đồ bố trí cảng",
+        "desc": "Bản đồ tương tác dưới đây cung cấp cái nhìn chi tiết về bố trí của Cảng Nước Sâu Miền Trung, làm nổi bật các khu vực chính sau:",
+        "anchorage-areas": {
+            "title": "Khu vực neo đậu",
+            "anchorage-area-no1": {
+                "title": "Khu vực neo đậu số 1: ",
+                "content": "2.4 km², độ sâu 13.6 m đến 15.8 m, phù hợp cho tàu từ 60.000 DWT đến 80.000 DWT (mớn nước tối đa: 14.5 m)."
+            },
+            "anchorage-area-no2": {
+                "title": "Khu vực neo đậu số 2: ",
+                "content": "2.9 km², độ sâu 17.0 m đến 20.8 m, phù hợp cho tàu trên 80.000 DWT (mớn nước tối đa: 18.5 m)."
+            }
+        },
+        "other-key-area": {
+            "title": "Các khu vực chính khác",
+            "item1": {
+                "title": "Khu vực xếp dỡ hàng hóa: ",
+                "content": "Được trang bị cần cẩu và thiết bị hiện đại, xử lý lên đến 30.000 tấn/ngày."
+            },
+            "item2": {
+                "title": "Cơ sở kho dầu ngoại quan: ",
+                "content": "Khu vực lưu trữ an toàn cho các sản phẩm dầu, tuân thủ tiêu chuẩn quốc tế."
+            },
+            "item3": {
+                "title": "Khu vực lưu trữ an toàn cho các sản phẩm dầu, tuân thủ tiêu chuẩn quốc tế.",
+                "content": "Các cơ sở hỗ trợ vận chuyển thuyền viên, khai báo đi bờ và trao đổi thuyền viên."
+            },
+            "item4": {
+                "title": "Khu vực quản lý và an toàn: ",
+                "content": "Các khu vực dành cho kiểm soát cảng, hoạt động an toàn và quản lý môi trường."
+            }
+        }
+    },
+    "strat-location": {
+        "title": "Vị trí chiến lược và kết nối",
+        "content": "Vị trí của Cảng Nước Sâu Miền Trung tại miền Trung Việt Nam mang lại khả năng kết nối vượt trội đến các tuyến hàng hải quốc tế. Bản đồ khu vực dưới đây làm nổi bật vị trí của chúng tôi tại Nghi Sơn, Tỉnh Thanh Hóa, và minh họa các tuyến đường vận chuyển chính kết nối chúng tôi với các thị trường trọng điểm tại Đông Nam Á (ví dụ: Singapore, Malaysia), Đông Á (ví dụ: Trung Quốc, Nhật Bản) và hơn thế nữa. Vị trí chiến lược này đảm bảo thời gian vận chuyển giảm và hiệu quả chuỗi cung ứng được nâng cao cho khách hàng của chúng tôi."
+    },
+    "key-feature": {
+        "title": "Đặc điểm nổi bật của cảng",
+        "item1": {
+            "title": "Tổng diện tích: ",
+            "content": "55 km², cung cấp không gian rộng rãi cho các hoạt động hàng hải đa dạng."
+        },
+        "item2": {
+            "title": "Năng lực tiếp nhận tàu: ",
+            "content": "Lên đến 200.000 DWT, đáp ứng nhiều kích cỡ tàu khác nhau."
+        },
+        "item3": {
+            "title": "Hoạt động 24/7: ",
+            "content": "Hỗ trợ liên tục cho điều hướng, neo đậu và xếp dỡ hàng hóa."
+        },
+        "item4": {
+            "title": "An toàn và bền vững: ",
+            "content": "Được trang bị dịch vụ ứng phó sự cố tràn dầu 24/7 và quản lý chất thải để đảm bảo tuân thủ môi trường."
+        }
+    },
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1": {
+            "title": "Tầm nhìn từ trên cao của cảng",
+            "content": "Cái nhìn toàn cảnh từ trên cao thể hiện toàn bộ bố trí của Cảng Nước Sâu Miền Trung."
+        },
+        "item2": {
+            "title": "Khu vực neo đậu hoạt động",
+            "content": "Hình ảnh các tàu neo đậu tại Khu vực neo đậu số 1 và số 2."
+        },
+        "item3": {
+            "title": "Bản đồ kết nối toàn cầu",
+            "content": "Hình ảnh minh họa các kết nối của chúng tôi với các tuyến hàng hải quốc tế."
+        }
+    },
+    "contact-banner": {
+        "title": "Điều hướng Cảng Nước Sâu Miền Trung với sự tự tin",
+        "content": "iên hệ với chúng tôi ngay hôm nay để biết thêm chi tiết hoặc lập kế hoạch hoạt động cùng đội ngũ của chúng tôi.",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

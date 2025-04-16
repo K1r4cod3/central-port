@@ -1,0 +1,43 @@
+{
+    "title": "Transportation Services",
+    "contact-button": "Contact Us Now",
+    "service": {
+        "title": "Ship Chartering",
+        "content": "We provide modern and efficient ship chartering services for international shipping routes. Our fleet is equipped with advanced technology to handle various types of cargo, including dry bulk such as coal, ores, grains, clinker, cement, oil, and other commodities. With flexible chartering options, we ensure timely and cost-effective operations, allowing you to focus on core activities while we manage the complexities of maritime transport."
+    },
+    "why-choose-us": {
+        "title": "Why Choose Us?",
+
+        "item1-title": "Modern Fleet",
+        "item1-content": "Our fleet is equipped with the latest technology, ensuring safe and efficient maritime transport for all types of cargo.",
+
+        "item2-title": "Flexible Chartering Options",
+        "item2-content": "We provide tailored chartering solutions to meet your specific needs, ensuring cost-effectiveness, minimal downtime, and compliance with regulations.",
+
+        "item3-title": "Local and International Connections",
+        "item3-content": "We connect you to international shipping routes, leveraging our strategic location in Central Vietnam for seamless global operations.",
+
+        "item4-title": "Experienced Team",
+        "item4-content": "Our skilled crew and logistics experts ensure smooth operations, from loading to delivery, with a focus on safety and reliability.",
+
+        "item5-title": "24/7 Support",
+        "item5-content": "We offer 24/7 support to meet your operational needs, ensuring your vessels and cargo are always ready for efficient delivery."
+    },
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1-title": "Vessel Operations",
+        "item1-content": "View our modern fleet in action as we transport cargo across international routes.",
+
+        "item2-title": "Cargo Handling Activities",
+        "item2-content": "See how we manage the loading and unloading process with precision and efficiency at the port.",
+
+        "item3-title": "Global Shipping Routes",
+        "item3-content": "Explore the international shipping routes we serve, connecting Central Vietnam to the world."
+    },
+    "contact": {
+        "title": "Ready to Streamline Your Cargo Operations Efficiently?",
+        "content": "Contact us today to learn more about our maritime and logistics services and how we can support your operations!",
+        "button": "Contact Us"
+
+    }
+}

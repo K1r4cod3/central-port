@@ -1,13 +1,15 @@
 import React from 'react'
 import './WhyChooseUsBanner.css'
 import { Clock, MapPin, TrafficCone, Truck } from "lucide-react"
+import { useTranslation } from 'react-i18next'
 
 const WhyChooseUsBanner = () => {
+  const { t } = useTranslation('anchorage-and-warehousing-services')
   return (
     <div className='py-16'>
       <div className='container mx-auto px-4 md:px-6'>
           <h2 className='text-2xl md:text-3xl font-bold mb-12 text-center text-blue-400 title-font'>
-            Tại Sao Lại Chọn Chúng Tôi?
+            {t('why-choose-us.title')}
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -18,9 +20,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Khu vực neo đậu chiến lược</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item1-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                  Hai khu vực neo đậu được thiết kế tối ưu để tiếp nhận nhiều loại tàu, đảm bảo an toàn và hiệu quả.
+                  {t('why-choose-us.item1-content')}
                 </p>
               </div>
             </div>
@@ -32,9 +34,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Hạ tầng tiên tiến</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item2-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                  Được trang bị các cơ sở hiện đại, chúng tôi cung cấp giải pháp lưu trữ và chuyển tải an toàn cho dầu và các hàng hóa khác.
+                  {t('why-choose-us.item2-content')}
                 </p>
               </div>
             </div>
@@ -46,9 +48,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>An toàn và tuân thủ</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item3-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                  Chúng tôi tuân thủ nghiêm ngặt các tiêu chuẩn an toàn và môi trường, đảm bảo hoạt động an toàn cho tất cả tàu và hàng hóa.
+                  {t('why-choose-us.item3-content')}
                 </p>
               </div>
             </div>
@@ -60,9 +62,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Hỗ trợ 24/7</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item4-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                  Đội ngũ tận tâm của chúng tôi luôn sẵn sàng hỗ trợ các nhu cầu neo đậu, chuyển tải và lưu trữ, giảm thiểu thời gian gián đoạn.
+                  {t('why-choose-us.item4-content')}
                 </p>
               </div>
             </div>

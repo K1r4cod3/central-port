@@ -1,0 +1,36 @@
+{
+    "title": "Dịch vụ an toàn và bảo vệ môi trường",
+    "contact-button": "Liên Hệ Ngay",
+    "introduction": {
+        "title": "Giới thiệu",
+        "content": "Chào mừng bạn đến với dịch vụ an toàn và bảo vệ môi trường của chúng tôi! Chúng tôi tự hào là đơn vị hàng đầu cung cấp các giải pháp toàn diện nhằm đảm bảo an toàn lao động và bảo vệ môi trường cho các doanh nghiệp trong nhiều lĩnh vực, từ công nghiệp, dầu khí đến vận tải biển. Với đội ngũ chuyên gia giàu kinh nghiệm và công nghệ hiện đại, chúng tôi cam kết mang đến các dịch vụ chất lượng cao, giúp doanh nghiệp của bạn không chỉ tuân thủ các quy định pháp luật mà còn góp phần xây dựng một môi trường làm việc bền vững và an toàn."
+    },
+    "services": {
+        "title": "Dịch vụ của chúng tôi",
+
+        "item1-title": "Kiểm soát và xử lý tràn dầu",
+        "item1-content": "Chúng tôi triển khai các biện pháp ứng phó nhanh chóng và hiệu quả để kiểm soát sự cố tràn dầu, giảm thiểu tối đa tác động đến môi trường biển và đất liền. Đội ngũ của chúng tôi được trang bị các thiết bị chuyên dụng và được đào tạo bài bản để xử lý các tình huống khẩn cấp, đảm bảo an toàn cho cả con người và hệ sinh thái.",
+
+        "item2-title": "Thu gom rác thải",
+        "item2-content": "Chúng tôi cung cấp dịch vụ thu gom, phân loại và xử lý rác thải một cách an toàn, tuân thủ nghiêm ngặt các quy định về môi trường của địa phương và quốc tế. Quy trình của chúng tôi được thiết kế để giảm thiểu nguy cơ ô nhiễm, đồng thời tái chế tối đa các loại rác thải, góp phần bảo vệ tài nguyên thiên nhiên.",
+
+        "item3-title": "Cho thuê phao chống va & phao chống tràn dầu",
+        "item3-content": "Chúng tôi cung cấp các loại phao chống va và phao chống tràn dầu chất lượng cao để bảo vệ các khu vực làm việc nhạy cảm, như cảng biển, bến tàu, hoặc các khu vực khai thác dầu khí. Thiết bị của chúng tôi được kiểm định kỹ lưỡng, đảm bảo hiệu quả trong việc ngăn ngừa sự cố và bảo vệ môi trường xung quanh."
+    },
+    "why-choose-us": {
+        "title": "Tại Sao Lại Chọn Chúng Tôi?",
+        "item1-title": "Chuyên nghiệp và tận tâm",
+        "item1-content": "Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ 24/7, đảm bảo giải quyết mọi vấn đề một cách nhanh chóng và hiệu quả.",
+        "item2-title": "Công nghệ tiên tiến",
+        "item2-content": "Chúng tôi sử dụng các thiết bị và công nghệ hiện đại nhất để mang lại kết quả tối ưu.",
+        "item3-title": "Cam kết bền vững",
+        "item3-content": "Mọi hoạt động của chúng tôi đều hướng đến việc bảo vệ môi trường và xây dựng một tương lai xanh."
+    },
+    "contact": {
+        "title": "Bạn đang tìm kiếm dịch vụ an toàn và bảo vệ môi trường ?",
+        "content": "Hãy liên hệ với chúng tôi ngay hôm nay để được tư vấn chi tiết và nhận các giải pháp phù hợp nhất cho doanh nghiệp của bạn! Chúng tôi luôn sẵn sàng đồng hành cùng bạn trên hành trình phát triển bền vững",
+        "button": "Liên hệ với chúng tôi"
+    }
+
+
+}

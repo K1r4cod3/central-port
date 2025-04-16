@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './i18n'
 import Navbar from './components/shared/Navbar'
 import FooterBar from './components/shared/FooterBar'
+import ScrollToTop from './components/shared/scrollToTop'
 import Home from './pages/Home/Home'
 import CargoHandlingAndTransshipmentServices from './pages/cargo-handling-and-transshipment-services/cargo-handling-and-transshipment-services'
 import AnchorageAndWarehousingServices from './pages/anchorage-and-warehousing-services/anchorage-and-warehousing-services'
@@ -20,6 +21,7 @@ import AreaMap from './pages/area-map/area-map'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

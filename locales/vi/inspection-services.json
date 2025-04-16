@@ -1,0 +1,54 @@
+{
+    "title": "Dịch Vụ Giám Định",
+    "contact-button": "Liên Hệ Ngay",
+    "introduction": {
+        "title": "Giới Thiệu",
+        "content": "Tại Cảng Nước Sâu Miền Trung, chúng tôi cung cấp dịch vụ giám định chuyên nghiệp để đảm bảo chất lượng, an toàn và tuân thủ tiêu chuẩn quốc tế cho hàng hóa và nhiên liệu của bạn. Tọa lạc tại Khu vực Nghi Sơn, Huyện Nghi Sơn, Tỉnh Thanh Hóa, cảng của chúng tôi được trang bị chuyên môn và nguồn lực để mang đến các giải pháp giám định chính xác và đáng tin cậy. Dù bạn đang xử lý hàng hóa nhập khẩu, xuất khẩu hay quản lý nhiên liệu tàu, dịch vụ giám định của chúng tôi được thiết kế để giảm thiểu rủi ro, đảm bảo tính minh bạch và hỗ trợ hoạt động của bạn với sự chính xác. Hãy tin tưởng chúng tôi để bảo vệ sự toàn vẹn của hàng hóa và nhiên liệu của bạn ở mọi bước."
+    },
+    "services": {
+        "title": "Dịch vụ của chúng tôi",
+
+        "item1-title": "Giám định hàng nhập",
+        "item1-content": "Chúng tôi thực hiện giám định kỹ lưỡng đối với hàng hóa nhập khẩu để xác minh chất lượng, số lượng và an toàn trước khi hàng nhập cảng. Đội ngũ của chúng tôi đảm bảo rằng tất cả hàng hóa đáp ứng các tiêu chuẩn yêu cầu và tuân thủ quy định địa phương cũng như quốc tế, mang lại cho bạn sự tự tin về tính toàn vẹn của lô hàng.",
+
+        "item2-title": "Giám định hàng xuất",
+        "item2-content": "Dịch vụ giám định hàng xuất của chúng tôi đảm bảo rằng hàng hóa của bạn đáp ứng các tiêu chuẩn của thị trường đích. Chúng tôi đánh giá cẩn thận về chất lượng, số lượng và sự tuân thủ, giúp giảm rủi ro và tránh các tranh chấp tốn kém, để hàng hóa của bạn có thể đến nơi với sự tự tin hoàn toàn.",
+
+        "item3-title": "Giám định nhiên liệu tàu - Bunker Survey",
+        "item3-content": "Chúng tôi cung cấp dịch vụ giám định nhiên liệu tàu chuyên nghiệp để đo lường và xác minh số lượng cũng như chất lượng nhiên liệu trên tàu của bạn. Các cuộc kiểm tra chi tiết của chúng tôi đảm bảo tính minh bạch trong giao dịch nhiên liệu, giúp ngăn ngừa sai lệch và tranh chấp giữa chủ tàu và nhà cung cấp. Với chuyên môn của chúng tôi, bạn có thể yên tâm rằng nguồn nhiên liệu của bạn chính xác và tuân thủ."
+    },
+    "why-choose-us": {
+        "title": "Tại Sao Lại Chọn Chúng Tôi?",
+
+        "item1-title": "Chuyên gia giám định",
+        "item1-content": "Đội ngũ giám định viên giàu kinh nghiệm của chúng tôi được đào tạo để mang lại kết quả chính xác và đáng tin cậy, đảm bảo tiêu chuẩn cao nhất về chất lượng và an toàn.",
+
+        "item2-title": "Tuân thủ quốc tế",
+        "item2-content": "Chúng tôi tuân thủ các tiêu chuẩn và quy định toàn cầu, cung cấp dịch vụ giám định đáp ứng yêu cầu của thị trường quốc tế.",
+
+        "item3-title": "Minh bạch và chính xác",
+        "item3-content": "Báo cáo giám định chi tiết của chúng tôi cung cấp cho bạn cái nhìn đầy đủ về chất lượng và số lượng hàng hóa cũng như nhiên liệu, giảm rủi ro và đảm bảo sự tin cậy.",
+
+        "item4-title": "Hỗ trợ 24/7",
+        "item4-content": "Chúng tôi cung cấp dịch vụ giám định liên tục 24/7 để phù hợp với lịch trình của bạn, đảm bảo hoạt động của bạn diễn ra suôn sẻ mà không bị chậm trễ.",
+
+        "item5-title": "Vị trí chiến lược",
+        "item5-content": "Nằm ở miền Trung Việt Nam, chúng tôi cung cấp khả năng tiếp cận dễ dàng cho các hoạt động giám định, khiến chúng tôi trở thành đối tác thuận tiện cho nhu cầu hàng hải của bạn."
+    },
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1-title": "Quy trình giám định hàng hóa",
+        "item1-content": "Xem đội ngũ của chúng tôi giám định hàng nhập và hàng xuất với sự chính xác và cẩn thận.",
+
+        "item2-title": "Giám định nhiên liệu tàu",
+        "item2-content": "Xem cách chúng tôi thực hiện giám định nhiên liệu để đảm bảo tính chính xác và minh bạch.",
+
+        "item3-title": "Cơ sở giám định",
+        "item3-content": "Khám phá các công cụ và cơ sở mà chúng tôi sử dụng để cung cấp dịch vụ giám định đáng tin cậy."
+    },
+    "contact": {
+        "title": "Đảm bảo chất lượng và sự tuân thủ của hàng hóa và nhiên liệu của bạn với dịch vụ giám định chuyên nghiệp của chúng tôi.",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để tìm hiểu thêm về cách chúng tôi có thể hỗ trợ hoạt động của bạn!",
+        "button": "Liên hệ với chúng tôi"
+    }
+}

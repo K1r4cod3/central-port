@@ -1,0 +1,60 @@
+{
+  "home": "Trang chủ",
+  "about": "Giới thiệu",
+  "services": "Dịch vụ",
+  "technical-information": "Thông số kĩ thuật",
+  "news": "Tin tức",
+  "contact": "Liên hệ",
+  "language": "Ngôn ngữ",
+  "search-placeholder": "Tìm kiếm",
+
+  "about-button": {
+    "about-us": "Giới thiệu",
+    "open-letter": "Thư ngỏ",
+    "highlight-advantages": "Lợi thế nổi bật"
+  },
+
+  "services-button": {
+    "service1": {
+      "title": "Dịch vụ xếp dỡ và chuyển tải hàng hóa",
+      "item1": "Chuyển tải xăng dầu",
+      "item2": "Cẩu hàng hóa trên biển"
+    },
+    "service2": {
+      "title": "Dịch vụ neo đậu và kho bãi",
+      "item1": "Neo đậu tàu thuyền",
+      "item2": "Neo đậu chuyển tải xăng dầu",
+      "item3": "Kho dầu ngoại quan"
+    },
+    "service3": {
+      "title": "Dịch vụ an toàn và bảo vệ môi trường",
+      "item1": "Kiểm soát và xử lý tràn dầu",
+      "item2": "Thu gom rác thải",
+      "item3": "Cho thuê phao chống va & phao chống tràn dầu"
+    },
+    "service4": {
+      "title": "Dịch vụ hỗ trợ thuyền viên và logicstics",
+      "item1": "Dịch vụ đưa đón thuyền viên từ tàu đi bờ",
+      "item2": "Dịch vụ khai báo thuyền viên đi bờ",
+      "item3": "Dịch vụ trao đổi thuyền viên"
+    },
+    "service5": {
+      "title": "Dịch vụ vận tải",
+      "item1": "Cho thuê tàu vận tải"
+    },
+    "service6": {
+      "title": "Dịch vụ giám định",
+      "item1": "Giám định hàng nhập",
+      "item2": "Giám định hàng xuất",
+      "item3": "Giám định nhiên liệu tàu"
+    }
+  },
+
+  "technical-infomation-button": {
+    "item1": "THÔNG TIN KĨ THUẬT",
+    "item2": "Khu vực neo đậu số 1",
+    "item3": "Khu vực neo đậu số 2",
+    "item4": "Bản đồ khu vực"
+  }
+
+} 

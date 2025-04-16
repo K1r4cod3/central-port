@@ -1,0 +1,51 @@
+{
+    "title": "Crew Support and Logistics Services",
+    "contact-button": "Contact Us Now",
+    "introduction": {
+        "title": "Introduction",
+        "content": "At Central Deepwater Port, we take pride in being a trusted partner for crew support and logistics services, ensuring the seamless operation of maritime activities. Our comprehensive services are designed to provide complete support, ensuring safety, efficiency, and convenience for crew members. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, we are committed to delivering top-tier support for crew members and logistics operations, ensuring your vessels and local resources are always ready for optimal performance. From crew transfers to essential supplies, we are available 24/7 to support your operations."
+    },
+    "services": {
+        "title": "Our Services",
+
+        "item1-title": "Crew Transfer Services from the Mainland",
+        "item1-content": "We provide safe and reliable crew transfer services, ensuring timely transfers and essential supplies for crew members. Our 24/7 transfer services ensure seamless operations without delays, with dedicated resources to support crew safety, bringing peace of mind to your operations.",
+
+        "item2-title": "Offshore Crew Transfer Services",
+        "item2-content": "We handle all aspects of offshore crew transfers, including local and international methods such as helicopters, ferries, and specialized vessels, ensuring compliance with safety standards. Our team plans transfers meticulously to ensure crew members can perform their duties without disruptions, helping you avoid operational delays.",
+
+        "item3-title": "Crew Exchange Services",
+        "item3-content": "We offer crew exchange services to facilitate smooth transitions during crew rotations, ensuring compliance with international labor regulations. Our resources are tailored to meet the specific needs of each client, ensuring detailed planning, timely exchanges, and minimal downtime, allowing your operations to run smoothly."
+    },
+    "why-choose-us": {
+        "title": "Why Choose Us?",
+        "item1-title": "Reliable and Safe Crew Transfer Services",
+        "item1-content": "Our team provides 24/7 support to ensure your operations run smoothly, with crew exchange services and emergency response capabilities that keep downtime to a minimum.",
+
+        "item2-title": "Local and International Expertise",
+        "item2-content": "Our team is well-versed in both local and international regulations, ensuring compliance and efficiency in crew support and logistics operations.",
+
+        "item3-title": "Experienced and Dedicated Team",
+        "item3-content": "Our staff is trained to provide exceptional support, handling every aspect of crew logistics with care and professionalism.",
+
+        "item4-title": "Strategic Location",
+        "item4-content": "Located in Central Vietnam, we provide seamless access to crew support and logistics resources, ensuring your vessels and crew are always ready for optimal performance."
+    },
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1-title": "Crew Transfer Operations",
+        "item1-content": "View our vessels in action as we transfer crew members to and from locations safely and efficiently.",
+
+        "item2-title": "Crew Exchange Activities",
+        "item2-content": "See how we manage the exchange process with precision and compliance to ensure crew transitions are seamless.",
+
+        "item3-title": "Crew Support Infrastructure",
+        "item3-content": "Explore the infrastructure we provide to ensure crew members are supported throughout their maritime journey."
+    },
+    "contact": {
+        "title": "Looking for Crew Support and Logistics Services to Optimize Your Operations?",
+        "content": "Contact us today to explore how Central Deepwater Port can support your crew and logistics needs!",
+        "button": "Contact Us"
+    }
+
+}

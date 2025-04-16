@@ -1,0 +1,43 @@
+{
+    "title": "Dịch vụ vận tải",
+    "contact-button": "Liên Hệ Ngay",
+    "service": {
+        "title": "Cho thuê tàu",
+        "content": "Chúng tôi cung cấp đội tàu hiện đại và đa dạng cho các tuyến hàng hải quốc tế. Tàu của chúng tôi được trang bị công nghệ tiên tiến để xử lý nhiều loại hàng hóa, bao gồm hàng rời như than, quặng, clinker, cũng như dầu và các hàng hóa khác. Với các tùy chọn thuê linh hoạt, chúng tôi đảm bảo lịch trình tối ưu và hiệu quả chi phí, cho phép bạn tập trung vào hoạt động cốt lõi của mình trong khi chúng tôi lo liệu việc vận chuyển."
+    },
+    "why-choose-us": {
+        "title": "Tại Sao Lại Chọn Chúng Tôi?",
+
+        "item1-title": "Đội tàu hiện đại",
+        "item1-content": "Tàu của chúng tôi được trang bị công nghệ mới nhất, đảm bảo vận chuyển an toàn và hiệu quả cho mọi loại hàng hóa.",
+
+        "item2-title": "Giải pháp linh hoạt",
+        "item2-content": "Chúng tôi cung cấp các tùy chọn thuê tàu tùy chỉnh để đáp ứng yêu cầu lịch trình và hàng hóa cụ thể của bạn, giúp tiết kiệm thời gian và chi phí.",
+
+        "item3-title": "Kết nối toàn cầu",
+        "item3-content": "Là cửa ngõ cho các tuyến hàng hải quốc tế, chúng tôi kết nối bạn với các thị trường trọng điểm tại Đông Nam Á, Trung Quốc, Nhật Bản và hơn thế nữa.",
+
+        "item4-title": "Đội ngũ giàu kinh nghiệm",
+        "item4-content": "Thuyền viên và chuyên gia logistics của chúng tôi đảm bảo hoạt động suôn sẻ, từ xếp hàng đến giao hàng, với trọng tâm là an toàn và độ tin cậy.",
+
+        "item5-title": "Hỗ trợ 24/7",
+        "item5-content": "Chúng tôi cung cấp hỗ trợ liên tục 24/7 để đáp ứng nhu cầu vận tải của bạn, đảm bảo hàng hóa của bạn luôn được vận chuyển đúng tiến độ."
+    },
+    "highlight-images": {
+        "title": "Hình Ảnh Nổi Bật",
+        "item1-title": "Đội tàu hoạt động",
+        "item1-content": "Xem đội tàu hiện đại của chúng tôi vận chuyển hàng hóa trên các tuyến quốc tế.",
+
+        "item2-title": "Hoạt động xếp dỡ hàng hóa",
+        "item2-content": "Xem cách chúng tôi quản lý hiệu quả việc xếp và dỡ hàng tại cảng.",
+
+        "item3-title": "Bản đồ tuyến đường toàn cầu",
+        "item3-content": "Khám phá các tuyến hàng hải quốc tế mà chúng tôi phục vụ, kết nối miền Trung Việt Nam với thế giới."
+    },
+    "contact": {
+        "title": "Bạn đã sẵn sàng vận chuyển hàng hóa một cách dễ dàng và hiệu quả?",
+        "content": "Liên hệ với chúng tôi ngay hôm nay để tìm hiểu thêm về dịch vụ vận tải của chúng tôi và cách chúng tôi có thể hỗ trợ nhu cầu logistics của bạn!",
+        "button": "Liên hệ với chúng tôi"
+
+    }
+}

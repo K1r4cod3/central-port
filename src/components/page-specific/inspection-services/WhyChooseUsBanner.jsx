@@ -1,13 +1,15 @@
 import React from 'react'
 import './WhyChooseUsBanner.css'
 import { Clock, MapPin, TrafficCone, Truck } from "lucide-react"
+import { useTranslation } from 'react-i18next'
 
 const WhyChooseUsBanner = () => {
+  const { t } = useTranslation('inspection-services')
   return (
     <div className='py-16'>
       <div className='container mx-auto px-4 md:px-6'>
           <h2 className='text-2xl md:text-3xl font-bold mb-12 text-center text-blue-400 title-font'>
-            Tại Sao Lại Chọn Chúng Tôi?
+            {t('why-choose-us.title')}
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
@@ -18,9 +20,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Chuyên gia giám định</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item1-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Đội ngũ giám định viên giàu kinh nghiệm của chúng tôi được đào tạo để mang lại kết quả chính xác và đáng tin cậy, đảm bảo tiêu chuẩn cao nhất về chất lượng và an toàn.
+                {t('why-choose-us.item1-content')}
                 </p>
               </div>
             </div>
@@ -32,9 +34,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Tuân thủ quốc tế</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item2-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Chúng tôi tuân thủ các tiêu chuẩn và quy định toàn cầu, cung cấp dịch vụ giám định đáp ứng yêu cầu của thị trường quốc tế.
+                {t('why-choose-us.item2-content')}
                 </p>
               </div>
             </div>
@@ -46,9 +48,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Minh bạch và chính xác</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item3-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Báo cáo giám định chi tiết của chúng tôi cung cấp cho bạn cái nhìn đầy đủ về chất lượng và số lượng hàng hóa cũng như nhiên liệu, giảm rủi ro và đảm bảo sự tin cậy.
+                {t('why-choose-us.item3-content')}
                 </p>
               </div>
             </div>
@@ -60,9 +62,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Hỗ trợ 24/7</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item4-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Chúng tôi cung cấp dịch vụ giám định liên tục 24/7 để phù hợp với lịch trình của bạn, đảm bảo hoạt động của bạn diễn ra suôn sẻ mà không bị chậm trễ.
+                {t('why-choose-us.item4-content')}
                 </p>
               </div>
             </div>
@@ -74,9 +76,9 @@ const WhyChooseUsBanner = () => {
                 </div>
               </div>
               <div>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Vị trí chiến lược</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('why-choose-us.item5-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                Nằm ở miền Trung Việt Nam, chúng tôi cung cấp khả năng tiếp cận dễ dàng cho các hoạt động giám định, khiến chúng tôi trở thành đối tác thuận tiện cho nhu cầu hàng hải của bạn.
+                {t('why-choose-us.item5-content')}
                 </p>
               </div>
             </div>

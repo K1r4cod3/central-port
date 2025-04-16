@@ -1,0 +1,36 @@
+{
+    "title": "Safety and Environmental Protection Services",
+    "contact-button": "Contact Us Now",
+    "introduction": {
+        "title": "Introduction",
+        "content": "Welcome to the safety and environmental protection services of our port! We are a leading port operator committed to providing comprehensive solutions for safety, environmental protection, and sustainability across various industries, from oil and gas to shipping and maritime transport. With our modern resources and expertise, we are dedicated to delivering high-quality services that help your business not only comply with regulatory requirements but also contribute to building a sustainable and safe working environment."
+    },
+    "services": {
+        "title": "Our Services",
+
+        "item1-title": "Inspection and Risk Assessment",
+        "item1-content": "We implement comprehensive measures to inspect vessels and assess risks during operations, minimizing the impact on the environment and land. Our resources are equipped with advanced technology to ensure safety and compliance, protecting both human resources and the ecosystem.",
+
+        "item2-title": "Waste Collection",
+        "item2-content": "We provide waste collection, classification, and recycling services for all types of vessels, adhering to strict environmental standards. Our processes are designed to minimize risks, promote safe waste disposal, and contribute to environmental sustainability.",
+
+        "item3-title": "Chartering Standards and Oil Spill Response",
+        "item3-content": "We offer a variety of chartering services and oil spill response solutions to ensure safety across all operational areas, including fuel handling, emergency response, firefighting, and other critical tasks. Our services are designed to mitigate risks and ensure compliance with environmental and safety regulations."
+    },
+    "why-choose-us": {
+        "title": "Why Choose Us?",
+        "item1-title": "Maritime Expertise",
+        "item1-content": "Our team has extensive experience in maritime operations, ensuring 24/7 readiness to support your safety and environmental initiatives.",
+        "item2-title": "Advanced Technology",
+        "item2-content": "We utilize state-of-the-art equipment and technology to ensure the highest standards of safety and environmental protection.",
+        "item3-title": "Sustainable Commitment",
+        "item3-content": "We are committed to leading initiatives in environmental protection, ensuring sustainable operations for a safer future."
+    },
+    "contact": {
+        "title": "Looking for Safety and Environmental Solutions?",
+        "content": "Contact us today to discuss how we can support your safety and environmental needs with tailored solutions for sustainable business development!",
+        "button": "Contact Us"
+    }
+
+
+}

@@ -1,0 +1,47 @@
+{
+    "title": "Cargo Handling and Transshipment Services",
+    "contact-button": "Contact Us Now",
+
+    "introduction": {
+        "title": "Introduction",
+        "content": "At Central Deepwater Port, we provide top-tier cargo handling and transshipment services, ensuring efficiency, reliability, and customer satisfaction. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, our port is equipped with modern infrastructure and advanced technology to handle various types of cargo, with a capacity of up to 200,000 DWT."
+    },
+
+    "capabilities": {
+        "title": "Our Capabilities",
+        "item1-title": "Cargo Handling Capacity",
+        "item1-content": "We have the capability to handle up to 30,000 tons per day, ensuring efficient and reliable cargo operations.",
+        "item2-title": "Cargo Types",
+        "item2-content": "We handle various cargo types, including dry bulk, liquid bulk, clinker, cement, construction materials, and other goods.",
+        "item3-title": "Oil Transshipment",
+        "item3-content": "We provide safe and internationally compliant oil transshipment services, with strict quality control to minimize risks.",
+        "item4-title": "Offshore Cargo Lifting",
+        "item4-content": "Leveraging advanced technology, we offer flexible and efficient offshore cargo lifting solutions for various industries."
+    },
+
+    "why-choose-us": {
+        "title": "Why Choose Us?",
+        "item1-title": "Modern Facilities",
+        "item1-content": "Equipped with advanced technology to optimize cargo handling, minimize costs, and reduce downtime for customers.",
+        "item2-title": "Experienced Team",
+        "item2-content": "Our team has extensive industry experience, ensuring accurate cargo handling, safety, and compliance with international standards.",
+        "item3-title": "24/7 Operations",
+        "item3-content": "We operate 24/7 to meet your scheduling needs, ensuring seamless operations and timely delivery.",
+        "item4-title": "Strategic Location",
+        "item4-content": "Located in Central Vietnam, we serve as a gateway for maritime trade, connecting the region to global markets."
+    },
+
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1-title": "Cargo Handling",
+        "item1-content": "View the cargo handling operations at our port through the lens of professional photography.",
+        "item2-title": "Transshipment Process",
+        "item2-content": "Discover how we ensure safety and efficiency during the transshipment process through our activities."
+    },
+
+    "contact": {
+        "title": "Ready to Streamline Your Cargo Operations?",
+        "content": "Contact us today to learn more about our maritime and logistics services and how we can support your operations!",
+        "button": "Contact Us"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "hero-banner": {
+        "title": "Welcome to Central Deepwater Port",
+        "content": "Providing modern logistics and transportation services, ensuring safety and environmental protection for clients both domestically and internationally.",
+        "button1": "Our Services",
+        "button2": "About Us",
+        "service-bar": {
+            "service1": "Warehouse",
+            "service2": "Sea Transportation",
+            "service3": "Land Transportation",
+            "service4": "Safety and Environmental Protection"
+        },
+        "video": "Watch Video"
+    },
+
+    "hightlight-service": {
+        "highlight-service-title": "Our Featured Services",
+        "highlight-service-desc": "At Central Deepwater Port, we provide a wide range of high-quality services to meet the diverse needs of our clients in maritime transport and logistics. With modern facilities and a team of experienced professionals, we are committed to delivering the best service experience both domestically and internationally.",
+        "highlight-service1": "Transportation",
+        "highlight-service2": "Inspection",
+        "highlight-service3": "Anchorage and Warehousing",
+        "highlight-service4": "Safety and Environmental Protection"
+    },
+
+    "welcome-info": {
+        "welcome-info-title": "Welcome to Central Deepwater Port – The Heart of Maritime Trade in Central Vietnam",
+        "welcome-info-content1": "Welcome to Central Deepwater Port! Strategically located in the heart of Central Vietnam, within Nghi Son Area, Nghi Son District, Thanh Hoa Province, we operate as one of the leading deepwater ports, playing a pivotal role in connecting Central Vietnam to international maritime routes. Spanning an area of 55 km², our port is equipped to handle vessels up to 200,000 DWT, making us one of the top 10 ports in Vietnam and a key hub in the region. We are committed to providing high-quality services, from cargo handling and vehicle parking to transshipment, warehousing, and comprehensive support, ensuring seamless operations for all types of vessels, while prioritizing safety and environmental protection.",
+        "welcome-info-content2": "Beyond being a port, we are a vital maritime hub, deeply committed to fostering sustainable trade development in Central Vietnam. Our vision is to create a modern, environmentally friendly, safe, and efficient port, meeting the growing demands of the global maritime industry and contributing to the region’s economic growth."
+    },
+
+    "info-banner": {
+        "info-banner-title": "Central Deepwater Port Welcomes Visitors",
+        "info-banner-content": "The Central Deepwater Port – your premier maritime hub in Central Vietnam – will open its doors to the public on Saturday, 29 March 2025. Visitors can look forward to a day of discovery and excitement, including tours of the anchorage areas, boat trips, and insights into the port's modern operations.",
+        "info-banner-button": "Learn more"
+    },
+
+    "explore-banner": {
+        "explore-banner-title": "Central Deepwater Port is the heart of maritime trade in Central Vietnam, with the following key specifications:",
+        "explore-banner-content1": "Port Area: 55 km²",
+        "explore-banner-content2": "Vessel Capacity: Up to 200,000 DWT",
+        "explore-banner-item1": "Working and learing",
+        "explore-banner-item2": "To do in the port"
+    }
+}

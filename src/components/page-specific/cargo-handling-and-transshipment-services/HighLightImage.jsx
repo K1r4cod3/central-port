@@ -3,12 +3,14 @@ import './HighLightImage.css'
 import { Link } from 'react-router-dom'
 import image1 from '../../../assets/cargo-handling-and-transshipment-services/highlight1.jpg'
 import image2 from '../../../assets/cargo-handling-and-transshipment-services/highlight2.jpg'
+import { useTranslation } from 'react-i18next'
 
 const HighLightImage = () => {
+  const { t } = useTranslation('cargo-handling-and-transshipment-services')
   return (
     <div className='py-16 bg-[#0693ca]'>
         <div className='container mx-auto px-4 md:px-6'>
-          <h2 className='text-2xl md:text-4xl font-bold mb-12 text-center text-white title-font'>Hình Ảnh Nổi Bật</h2>
+          <h2 className='text-2xl md:text-4xl font-bold mb-12 text-center text-white title-font'>{t('highlight-images.title')}</h2>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
             <div className='overflow-hidden shadow-md bg-white hover:scale-105 hover:-translate-y-2 transition-transform duration-300'>
@@ -20,8 +22,8 @@ const HighLightImage = () => {
                 />
               </div>
               <div className='p-6'>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Xếp dỡ hàng hóa</h3>
-                <p className='text-gray-700 content-font'>Xem đội ngũ của chúng tôi xử lý hàng rời với sự chính xác và cẩn thận.</p>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('highlight-images.item1-title')}</h3>
+                <p className='text-gray-700 content-font'>{t('highlight-images.item1-content')}</p>
               </div>
             </div>
 
@@ -34,9 +36,9 @@ const HighLightImage = () => {
                 />
               </div>
               <div className='p-6'>
-                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>Quy trình chuyển tải dầu</h3>
+                <h3 className='text-xl font-semibold mb-2 text-gray-900 title-font'>{t('highlight-images.item2-title')}</h3>
                 <p className='text-gray-700 content-font'>
-                  Tìm hiểu cách chúng tôi đảm bảo an toàn và tuân thủ trong các hoạt động chuyển tải dầu.
+                  {t('highlight-images.item2-content')}
                 </p>
               </div>
             </div>

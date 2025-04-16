@@ -1,8 +1,8 @@
 import "./NewsBanner.css"
-import new1 from "../../../assets/1.jpg"
-import new2 from "../../../assets/2.jpg"
-import new3 from "../../../assets/3.jpg"
-import new4 from "../../../assets/4.jpg"
+import new1 from "../../../assets/1.png"
+import new2 from "../../../assets/2.png"
+import new3 from "../../../assets/3.png"
+import new4 from "../../../assets/4.png"
 
 export const NewsBanner = () => {
   return (
@@ -18,9 +18,9 @@ export const NewsBanner = () => {
             alt="News 1"
             className="w-full h-40 sm:h-48 object-cover rounded-lg mb-3 sm:mb-4"
           />
-          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">19/3/2025</span>
+          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">14/4/2025</span>
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-800 mb-2">
-            Chứng khoán Mỹ xanh rực nhờ hy vọng về thuế quan, giá dầu tăng hơn 1% sau tin Venezuela
+            Dự kiến tên và trung tâm chính trị - hành chính của 34 tỉnh thành sau sáp nhập
           </h3>
         </div>
 
@@ -31,9 +31,9 @@ export const NewsBanner = () => {
             alt="News 2"
             className="w-full h-40 sm:h-48 object-cover rounded-lg mb-3 sm:mb-4"
           />
-          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">18/3/2025</span>
+          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">12/4/2025</span>
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-800 mb-2">
-            Ông Trump lại "tung hỏa mù" về thuế quan
+            Thách thức với Bộ trưởng Tài chính Mỹ trong 90 ngày đàm phán thuế
           </h3>
         </div>
 
@@ -44,9 +44,9 @@ export const NewsBanner = () => {
             alt="News 3"
             className="w-full h-40 sm:h-48 object-cover rounded-lg mb-3 sm:mb-4"
           />
-          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">19/3/2025</span>
+          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">13/4/2025</span>
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-800 mb-2">
-            Dự báo 20 nền kinh tế tăng trưởng nhanh nhất thế giới năm 2025, Việt Nam cũng có mặt
+            Giáo hoàng Francis bất ngờ xuất hiện ở quảng trường tại Vatican
           </h3>
         </div>
 
@@ -57,9 +57,9 @@ export const NewsBanner = () => {
             alt="News 4"
             className="w-full h-40 sm:h-48 object-cover rounded-lg mb-3 sm:mb-4"
           />
-          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">19/3/2025</span>
+          <span className="text-gray-500 text-xs sm:text-sm mb-1 sm:mb-2">13/4/2025</span>
           <h3 className="text-sm sm:text-base md:text-lg font-bold text-gray-800 mb-2">
-            Châu Âu lo không thể tiếp tục dựa vào nguồn cung USD từ Fed
+            Chuyến thăm của ông Tập Cận Bình sẽ là 'mốc son mới trong quan hệ Việt - Trung'
           </h3>
         </div>
       </div>

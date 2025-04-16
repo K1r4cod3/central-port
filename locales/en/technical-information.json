@@ -1,0 +1,64 @@
+{
+    "title": "Technical Information",
+    "introduction": {
+        "title": "Introduction",
+        "content": "Central Deepwater Port is strategically designed to meet the highest international standards, providing exceptional capabilities to support maritime operations. Located in Nghi Son Area, Nghi Son District, Thanh Hoa Province, our port spans a distance of 55 km² and is equipped to accommodate vessels up to 200,000 DWT. Below are the detailed specifications of our anchorage areas and the services we provide to ensure efficient operations."
+    },
+    "anchoring-areas": {
+        "area1": {
+            "title": "Anchorage Area No. 1",
+            "area": "Area: 2.4 km²",
+            "depth": "Depth: 13.6 m to 15.8 m",
+            "suitable": "Suitable for: Vessels from 60,000 DWT to 80,000 DWT (maximum draft: 14.5 m)",
+            "vhf": "VHF Contact: CH16 for inspections, CH09 for operations",
+            "coordinates": {
+                "title": "Coordinates:",
+                "point1": "DVNS 1: 19°18'30\"N - 105°47'30\"E",
+                "point2": "DVNS 2: 19°18'30\"N - 105°48'30\"E",
+                "point3": "DVNS 3: 19°17'30\"N - 105°48'30\"E",
+                "point4": "DVNS 4: 19°17'30\"N - 105°47'30\"E"
+            }
+        },
+        "area2": {
+            "title": "Anchorage Area No. 2",
+            "area": "Area: 2.9 km²",
+            "depth": "Depth: 17.0 m to 20.8 m",
+            "suitable": "Suitable for: Vessels over 80,000 DWT (maximum draft: 18.5 m)",
+            "vhf": "VHF Contact: CH16 for inspections, CH09 for operations",
+            "coordinates": {
+                "title": "Coordinates:",
+                "point1": "DVNS 5: 19°17'30\"N - 105°48'30\"E",
+                "point2": "DVNS 6: 19°17'30\"N - 105°49'30\"E",
+                "point3": "DVNS 7: 19°16'30\"N - 105°49'30\"E",
+                "point4": "DVNS 8: 19°16'30\"N - 105°48'30\"E"
+            }
+        }
+    },
+    "map": {
+        "title": "Anchorage Area Map",
+        "description": "Our anchorage areas are strategically planned to ensure safe and efficient operations for all vessels. The map provided illustrates the layout of Anchorage Area No. 1 and No. 2, including coordinates, depth ranges, and operational guidelines to support seamless navigation and planning."
+    },
+    "additional-info": {
+        "title": "Technical Specifications",
+        "items": {
+            "item1": "Cargo handling capacity: 30,000 tons/day",
+            "item2": "Port area: 55 km²",
+            "item3": "Vessel Accommodation Capacity: Up to 200,000 DWT",
+            "item4": "Safety and Compliance Services: 24/7 support for spill prevention, quality assurance, and environmental safety"
+        }
+    },
+    "highlight-images": {
+        "title": "Featured Images",
+        "item1-title": "Anchorage Area Overview",
+        "item1-content": "View an overview of our anchorage areas, designed for the safe anchoring of vessels.",
+        "item2-title": "Technical Specification Map",
+        "item2-content": "Explore the technical layout of our anchorage areas, including coordinates and depth ranges.",
+        "item3-title": "Cargo Handling Operations",
+        "item3-content": "See our advanced facilities in action, ensuring efficient cargo handling with precision."
+    },
+    "contact-banner": {
+        "title": "Need Additional Technical Information to Support Your Operations?",
+        "content": "Contact us today to learn more about how Central Deepwater Port can support your maritime needs!",
+        "button": "Contact Us"
+    }
+}
